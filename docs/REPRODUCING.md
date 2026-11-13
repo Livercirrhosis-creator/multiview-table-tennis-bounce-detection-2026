@@ -55,6 +55,21 @@ python run.py --input public_data --output /path/to/new-output \
 
 配套归一化、桌框 metadata、视觉 calibration 一并随资产发布。视觉校准标量 `a=0.1785668588891146` 使用 121 段来源留出的预测拟合，不能写成 154 段训练内校准。完整文件名、字节数、SHA256 见 [assets.json](../metadata/assets.json)。
 
+## 公开15段的本地计分
+
+完成视频推理后，可以使用随仓库提供的独立评分工具（Python 标准库即可）：
+
+```bash
+python tools/public_scorer.py \
+  --manifest /path/to/official/pingpang/public_data/manifest.json \
+  --gt /path/to/official/pingpang/public_data/gt_public.jsonl \
+  --predictions /path/to/output/predictions.jsonl \
+  --run-status /path/to/output/run_status.json \
+  --output /path/to/new-results/public_score.json
+```
+
+该命令在本仓库根目录执行，GT、manifest 和输出由使用者自行提供。会生成 JSON 总表、逐角度与逐视频 CSV，建议使用新输出路径。帧差≤1且坐标距离≤50像素才可匹配；忽略点处理是记录明确的本地假设。这不是官方隐藏评分器，也不把外部130的参考标签转换成比赛总分。
+
 ## 训练与评价源码的可复现边界
 
 `research/` 保存当时的原始训练／评分实现，不是另写的一套示意训练代码：
@@ -64,6 +79,7 @@ python run.py --input public_data --output /path/to/new-output \
 - `20261108_table_module_refinement`：桌框训练与评价。
 - `20261109_final154_refit`：dense/window 各 80 轮、gap 200 轮、桌框 12 轮的最终拟合入口。
 - `20261110_visual_calibration`：嵌套来源留出、标量校准、最终视觉拟合与固定配对评分。
+- `20261110_adapted_visual_contact` 与 `20261105_coverage_aware_events`：前述脚本复用的视觉训练器、视觉模型结构和密集事件包损失。
 
 这些历史脚本保留原相对路径、缓存身份及哈希约束；还依赖原始工作区中的视频、标签、来源划分、特征缓存、预训练初始化和辅助模块。**克隆本展示仓库不能直接完整重训全部历史实验。** 私有完整归档保留恢复材料，公开源码用于核查训练方法；不要删除脚本校验来伪装复现成功。
 

@@ -1,0 +1,104 @@
+{
+  "schema": "historical_stage_summary.v1",
+  "scope": "Same-stream public development diagnostics; not hidden or blind",
+  "note": "Cached same-stream stage diagnostics, not remove-one-block ablation or final submission results.",
+  "candidate_commit": "6ba55c3a1997fafda9c556b2648799a68d539e99",
+  "candidate_entry": "participant.contact_position_v001.solution:Solution",
+  "stage_totals": {
+    "01_b0": {
+      "tp": 61,
+      "fp": 43,
+      "fn": 31,
+      "predictions": 109,
+      "ignored_predictions": 5
+    },
+    "02_b0_e03_before_e06": {
+      "tp": 67,
+      "fp": 53,
+      "fn": 25,
+      "predictions": 125,
+      "ignored_predictions": 5
+    },
+    "03_e06": {
+      "tp": 67,
+      "fp": 39,
+      "fn": 25,
+      "predictions": 111,
+      "ignored_predictions": 5
+    },
+    "04_e05_2d": {
+      "tp": 69,
+      "fp": 39,
+      "fn": 23,
+      "predictions": 113,
+      "ignored_predictions": 5
+    },
+    "05_z_only": {
+      "tp": 44,
+      "fn": 48,
+      "predictions": 48,
+      "fp": 3,
+      "ignored_predictions": 1
+    },
+    "06_z_first_fusion": {
+      "tp": 76,
+      "fp": 33,
+      "fn": 16,
+      "predictions": 114,
+      "ignored_predictions": 5
+    },
+    "07_joint": {
+      "tp": 78,
+      "fp": 33,
+      "fn": 14,
+      "predictions": 116,
+      "ignored_predictions": 5
+    },
+    "08_plane": {
+      "tp": 78,
+      "fp": 30,
+      "fn": 14,
+      "predictions": 113,
+      "ignored_predictions": 5
+    },
+    "09_short_gap": {
+      "tp": 78,
+      "fp": 29,
+      "fn": 14,
+      "predictions": 112,
+      "ignored_predictions": 5
+    },
+    "10_gap_no_heads": {
+      "tp": 78,
+      "fp": 27,
+      "fn": 14,
+      "predictions": 110,
+      "ignored_predictions": 5
+    },
+    "11_old_head": {
+      "tp": 80,
+      "fp": 25,
+      "fn": 12,
+      "predictions": 110,
+      "ignored_predictions": 5
+    },
+    "12_new_head_only": {
+      "tp": 73,
+      "fp": 10,
+      "fn": 19,
+      "predictions": 85,
+      "ignored_predictions": 2
+    },
+    "13_both_heads": {
+      "tp": 75,
+      "fp": 9,
+      "fn": 17,
+      "predictions": 86,
+      "ignored_predictions": 2
+    }
+  },
+  "replay_checks": {
+    "exact_stage_replays": 105
+  },
+  "inference_fps": null
+}

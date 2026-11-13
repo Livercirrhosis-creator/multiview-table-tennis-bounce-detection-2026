@@ -484,6 +484,60 @@
       "source": "experiments/20261110_captain_frame_overlap/runs/selftest_fast_v003/release_receipt.json",
       "original_sha256": "1d8d6940106988c506c4ca313a7a9eac50a40d5818f725e29f10b4530dc364d0",
       "transformation": "JSON reformatted; machine paths normalized; metric values unchanged"
+    },
+    {
+      "path": "tools/public_scorer.py",
+      "sha256": "2a21479a8cbc07bc11195fb8141e9ee0482b5aa8631e5244cd0c75cbdd41fec5",
+      "source_repository": "semiconductor007/super-AI-",
+      "source_commit": "bde7d970e86fd94161ebe59dd7f51663fb71517b",
+      "source": "experiments/20261103_public15_baseline/code/frozen_scorer.py",
+      "original_sha256": "2a21479a8cbc07bc11195fb8141e9ee0482b5aa8631e5244cd0c75cbdd41fec5",
+      "transformation": "Byte-identical Git blob"
+    },
+    {
+      "path": "research/20261110_adapted_visual_contact/code/train_adapted_visual.py",
+      "sha256": "6a8dc9104fa8594f10f4f1b68a84b044df6d57bb074bf37b3ca62e14e57853c0",
+      "source_repository": "semiconductor007/super-AI-",
+      "source_commit": "bde7d970e86fd94161ebe59dd7f51663fb71517b",
+      "source": "experiments/20261110_adapted_visual_contact/code/train_adapted_visual.py",
+      "original_sha256": "6a8dc9104fa8594f10f4f1b68a84b044df6d57bb074bf37b3ca62e14e57853c0",
+      "transformation": "Byte-identical Git blob"
+    },
+    {
+      "path": "research/20261110_adapted_visual_contact/versions/v001/participant/pingpang/participant/adapted_visual_v001/model.py",
+      "sha256": "45d7bb77eff31c92d9d9dd0e8671d81c9b295dc108c71527ee2b56615a02e7ee",
+      "source_repository": "semiconductor007/super-AI-",
+      "source_commit": "bde7d970e86fd94161ebe59dd7f51663fb71517b",
+      "source": "experiments/20261110_adapted_visual_contact/versions/v001/participant/pingpang/participant/adapted_visual_v001/model.py",
+      "original_sha256": "45d7bb77eff31c92d9d9dd0e8671d81c9b295dc108c71527ee2b56615a02e7ee",
+      "transformation": "Byte-identical Git blob"
+    },
+    {
+      "path": "research/20261105_coverage_aware_events/code/train_dense_context.py",
+      "sha256": "f98a520bb7097e9f2486c302458051fcac94dff54e6ae03d00f6b74c24b59f99",
+      "source_repository": "semiconductor007/super-AI-",
+      "source_commit": "bde7d970e86fd94161ebe59dd7f51663fb71517b",
+      "source": "experiments/20261105_coverage_aware_events/code/train_dense_context.py",
+      "original_sha256": "f98a520bb7097e9f2486c302458051fcac94dff54e6ae03d00f6b74c24b59f99",
+      "transformation": "Byte-identical Git blob"
+    },
+    {
+      "path": "evidence/historical_pipeline_stages.json",
+      "sha256": "a582a196152b50e7b4fa112193bdb7246abbe122baeee5ee43cf5c1ce4c8aad7",
+      "source_repository": "semiconductor007/super-AI-",
+      "source_commit": "1ae5894e1edc04f9271392c46026cd5501d7ffd2",
+      "source": "experiments/20261020_pipeline_combination_audit/analysis/audit_summary.json",
+      "original_sha256": "8233c28de08dc556b09dd1a7a9ca3fc78cb162a7dc1b6665f3f698b930600a50",
+      "transformation": "Selected aggregate fields only; no event rows or labels"
+    },
+    {
+      "path": "evidence/historical_block_ablation.json",
+      "sha256": "a1f14d3c142afdae71892eaf4478168e40b7fbd6e43adcc7d0fc5254966bc03f",
+      "source_repository": "semiconductor007/super-AI-",
+      "source_commit": "4bfe7fb8c8d3595a8cfe1b7195ca794ed20be828",
+      "source": "experiments/20261104_full_chain_rebuild/analysis/block_comparison.json",
+      "original_sha256": "36d21486a54a43d249537c0e6250375e441b00504d2236961a1c585615fa12ff",
+      "transformation": "Selected aggregate fields only; no event rows or labels"
     }
   ]
 }

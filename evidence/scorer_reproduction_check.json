@@ -1,0 +1,28 @@
+{
+  "scope": "Same recorded public15 inputs; local score reproduction only",
+  "checked_on": "2026-11-13",
+  "source_commit": "bde7d970e86fd94161ebe59dd7f51663fb71517b",
+  "scorer_sha256": "2a21479a8cbc07bc11195fb8141e9ee0482b5aa8631e5244cd0c75cbdd41fec5",
+  "matched_sections": [
+    "rules",
+    "aggregate_event_metrics",
+    "per_angle",
+    "per_video",
+    "performance",
+    "scores",
+    "warnings"
+  ],
+  "input_sha256": {
+    "manifest": "2e1eb4fb76efbb71fe80d0307ee4bbe6d7b412d8d464d07c25721ddb56f5c5e4",
+    "ground_truth": "f015dffd8d2f4fc2c56c18d39174592105e298cb12c647fcd43a9c94c15adb98",
+    "predictions": "d16b7dd8560281a2dafa7ab2e5c5ffd7cefa9c3b09bbcdfc339c6a614e42adb2",
+    "run_status": "20e8ef169020ac05c75d686816f758a3c8a8d6262fbd07bc373f700095ce611d"
+  },
+  "scores": {
+    "accuracy_out_of_75": 63.318014705882355,
+    "performance_out_of_25": 25.0,
+    "total_out_of_100": 88.31801470588235,
+    "conservative_total_including_prepare": 88.31801470588235
+  },
+  "model_inference_runs": 0
+}

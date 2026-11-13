@@ -1,0 +1,21 @@
+{
+  "review_date": "2026-11-13",
+  "repository": "semiconductor007/super-AI-",
+  "remote_branch_heads_checked": 72,
+  "fetch_completed": true,
+  "latest_pingpang_commit": "bde7d970e86fd94161ebe59dd7f51663fb71517b",
+  "default_main_commit": "eee0bb305b3d7dba2358c3a7574fd4bdfcc21957",
+  "basketball_commit": "bfcc79f242d31af899a4cd03f208a68eb4a6e039",
+  "newer_pingpang_release_found": false,
+  "all_fetched_heads_covered_by_existing_private_bundle": true,
+  "runtime_and_weights_changed": false,
+  "imported_paths": [
+    "tools/public_scorer.py",
+    "research/20261110_adapted_visual_contact/code/train_adapted_visual.py",
+    "research/20261110_adapted_visual_contact/versions/v001/participant/pingpang/participant/adapted_visual_v001/model.py",
+    "research/20261105_coverage_aware_events/code/train_dense_context.py",
+    "evidence/historical_pipeline_stages.json",
+    "evidence/historical_block_ablation.json"
+  ],
+  "scope": "Curated source and aggregate evidence only; original team repository was not modified"
+}

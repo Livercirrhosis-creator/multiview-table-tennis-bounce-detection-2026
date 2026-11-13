@@ -45,9 +45,11 @@ SuperIntelligence 团队参加 2026 年“动感地带 AI+ 高校创智计划”
 | --- | --- |
 | [runtime/participant](runtime/participant) | 最终入口的 58 个新增／改动源码；保留原运行实现 |
 | [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) | 算法组件、里程碑、取舍与限制 |
+| [docs/TEAM_HISTORY.md](docs/TEAM_HISTORY.md) | 团队历史整链与消融证据、补充源码与归档取舍 |
 | [docs/RESULTS.md](docs/RESULTS.md) · [evidence](evidence) | 评价边界与可核查 JSON 结果 |
 | [docs/REPRODUCING.md](docs/REPRODUCING.md) | 官方依赖、模型恢复、推理步骤和训练档案说明 |
-| [research](research) | 21 份训练、校准与评估历史源码，及冻结协议 |
+| [research](research) | 24 份训练、模型结构、校准与评估历史源码，及冻结协议 |
+| [tools/public_scorer.py](tools/public_scorer.py) | 可独立运行的公开集本地复算工具，不依赖 GPU |
 | [metadata/assets.json](metadata/assets.json) | 五类最终模型及四项配套配置的 SHA256 |
 | [metadata/provenance.json](metadata/provenance.json) | 源码、原始证据、封包与历史提交身份 |
 | [scripts/verify_archive.py](scripts/verify_archive.py) | 无需 GPU 的仓库和模型完整性检查 |

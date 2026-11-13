@@ -1,0 +1,187 @@
+{
+  "schema": "historical_block_ablation_summary.v1",
+  "scope": "Historical, exposed cached-evidence mechanism analysis; no independent generalization or inference FPS",
+  "note": "Historical exposed public15; cached replay with downstream recomputation. Accuracy only, no measured inference speed.",
+  "training_runs": 0,
+  "new_video_inference_runs": 0,
+  "protected33_used": false,
+  "public_clock": "Historical manifest-frame/FPS clock reproduced; not a native-time robustness claim",
+  "public15": {
+    "exact_full_reproduced_videos": 15,
+    "arms": {
+      "full": {
+        "final": {
+          "pooled": {
+            "tp": 78,
+            "fp": 11,
+            "fn": 14,
+            "precision": 0.8764044943820225,
+            "recall": 0.8478260869565217,
+            "f1": 0.861878453038674
+          },
+          "by_angle": {
+            "0度": {
+              "tp": 17,
+              "fp": 4,
+              "fn": 4,
+              "precision": 0.8095238095238095,
+              "recall": 0.8095238095238095,
+              "f1": 0.8095238095238095
+            },
+            "45度": {
+              "tp": 30,
+              "fp": 7,
+              "fn": 8,
+              "precision": 0.8108108108108109,
+              "recall": 0.7894736842105263,
+              "f1": 0.8
+            },
+            "90度": {
+              "tp": 31,
+              "fp": 0,
+              "fn": 2,
+              "precision": 1.0,
+              "recall": 0.9393939393939394,
+              "f1": 0.96875
+            }
+          },
+          "accuracy_points_out_of75": 64.45684523809524
+        },
+        "model_calls": {
+          "tcn_forwards": 15,
+          "mlp_calls": 15
+        }
+      },
+      "no_heads": {
+        "final": {
+          "pooled": {
+            "tp": 79,
+            "fp": 22,
+            "fn": 13,
+            "precision": 0.7821782178217822,
+            "recall": 0.8586956521739131,
+            "f1": 0.8186528497409327
+          },
+          "by_angle": {
+            "0度": {
+              "tp": 17,
+              "fp": 4,
+              "fn": 4,
+              "precision": 0.8095238095238095,
+              "recall": 0.8095238095238095,
+              "f1": 0.8095238095238095
+            },
+            "45度": {
+              "tp": 32,
+              "fp": 16,
+              "fn": 6,
+              "precision": 0.6666666666666666,
+              "recall": 0.8421052631578947,
+              "f1": 0.7441860465116279
+            },
+            "90度": {
+              "tp": 30,
+              "fp": 2,
+              "fn": 3,
+              "precision": 0.9375,
+              "recall": 0.9090909090909091,
+              "f1": 0.9230769230769231
+            }
+          },
+          "accuracy_points_out_of75": 61.91966947780901
+        },
+        "model_calls": {
+          "tcn_forwards": 0,
+          "mlp_calls": 0
+        }
+      },
+      "no_e06": {
+        "final": {
+          "pooled": {
+            "tp": 77,
+            "fp": 14,
+            "fn": 15,
+            "precision": 0.8461538461538461,
+            "recall": 0.8369565217391305,
+            "f1": 0.8415300546448088
+          },
+          "by_angle": {
+            "0度": {
+              "tp": 17,
+              "fp": 5,
+              "fn": 4,
+              "precision": 0.7727272727272727,
+              "recall": 0.8095238095238095,
+              "f1": 0.7906976744186046
+            },
+            "45度": {
+              "tp": 30,
+              "fp": 9,
+              "fn": 8,
+              "precision": 0.7692307692307693,
+              "recall": 0.7894736842105263,
+              "f1": 0.7792207792207793
+            },
+            "90度": {
+              "tp": 30,
+              "fp": 0,
+              "fn": 3,
+              "precision": 1.0,
+              "recall": 0.9090909090909091,
+              "f1": 0.9523809523809523
+            }
+          },
+          "accuracy_points_out_of75": 63.05748515050841
+        },
+        "model_calls": {
+          "tcn_forwards": 15,
+          "mlp_calls": 15
+        }
+      },
+      "no_3d": {
+        "final": {
+          "pooled": {
+            "tp": 66,
+            "fp": 21,
+            "fn": 26,
+            "precision": 0.7586206896551724,
+            "recall": 0.717391304347826,
+            "f1": 0.7374301675977654
+          },
+          "by_angle": {
+            "0度": {
+              "tp": 12,
+              "fp": 11,
+              "fn": 9,
+              "precision": 0.5217391304347826,
+              "recall": 0.5714285714285714,
+              "f1": 0.5454545454545454
+            },
+            "45度": {
+              "tp": 26,
+              "fp": 8,
+              "fn": 12,
+              "precision": 0.7647058823529411,
+              "recall": 0.6842105263157895,
+              "f1": 0.7222222222222222
+            },
+            "90度": {
+              "tp": 28,
+              "fp": 2,
+              "fn": 5,
+              "precision": 0.9333333333333333,
+              "recall": 0.8484848484848485,
+              "f1": 0.8888888888888888
+            }
+          },
+          "accuracy_points_out_of75": 53.91414141414141
+        },
+        "model_calls": {
+          "tcn_forwards": 15,
+          "mlp_calls": 15
+        }
+      }
+    }
+  },
+  "inference_fps": null
+}
