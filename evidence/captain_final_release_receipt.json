@@ -1,0 +1,51 @@
+{
+  "started": 1794309918.7925758,
+  "overlay_sha256": "7986f48b4254a68e2fb9002556252bec573e9b75afa48c7d10dbd51a8681c863",
+  "tasks": {
+    "pingpang": {
+      "performance": {
+        "total_frames": 2109,
+        "infer_sec": 39.8,
+        "infer_fps": 53.0,
+        "avg_video_fps": 52.4,
+        "p50_video_fps": 52.9,
+        "p90_video_fps": 56.2
+      },
+      "videos": 15,
+      "predictions_sha256": "d16b7dd8560281a2dafa7ab2e5c5ffd7cefa9c3b09bbcdfc339c6a614e42adb2",
+      "engines": {
+        "8.6.1/NVIDIA GeForce RTX 4090/ball-85e496496855.engine": "c6e767de8a9add47c55ee145cad2ae5749ef899043bd386e06cc309fc7fe6304"
+      },
+      "files": {
+        "predictions.jsonl": "d16b7dd8560281a2dafa7ab2e5c5ffd7cefa9c3b09bbcdfc339c6a614e42adb2",
+        "run_status.json": "20e8ef169020ac05c75d686816f758a3c8a8d6262fbd07bc373f700095ce611d",
+        "run.log": "f9b5b68ed002d3a0d1efbb56350c3b7e17b2c3c8b6bac5059d9c1df8ec7706c1"
+      }
+    },
+    "basketball": {
+      "performance": {
+        "total_frames": 1500,
+        "infer_sec": 28.2,
+        "infer_fps": 53.2,
+        "avg_video_fps": 53.5,
+        "p50_video_fps": 57.6,
+        "p90_video_fps": 57.6
+      },
+      "videos": 2,
+      "predictions_sha256": "4e37d211d59c7aa7c7089ff1cad859e9d2b334032bbc84dd68bf46919a283a72",
+      "engines": {
+        "8.6.1/NVIDIA GeForce RTX 4090/player_basketball_D1-1d16cb1c04fb.engine": "8d69a92ccc41052b418b251c07fb005c03e4f848704bd06b7cf0829ead0227e8"
+      },
+      "files": {
+        "predictions.jsonl": "4e37d211d59c7aa7c7089ff1cad859e9d2b334032bbc84dd68bf46919a283a72",
+        "run_status.json": "b98ef20147cc93b6ea7978d46b76a01b2187de8008e9f58e1c0fb7fd39102844",
+        "run.log": "d54298cf97b4a354aad8b94d4cb9b590701b07263e7ed6223d1b0e8bda7b0528"
+      }
+    }
+  },
+  "active": true,
+  "completed": true,
+  "exit_code": 0,
+  "default_sha256": "2477d8718627beff24b698daa2cd442cac6800028422ba3ef998127930a4ef90",
+  "ended": 1794309992.7621
+}

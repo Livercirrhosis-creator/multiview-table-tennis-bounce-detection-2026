@@ -1,0 +1,324 @@
+{
+  "schema": "visual_calibration_research_decision.v1",
+  "decision": "continue_fixed154_confirmation_not_adopted",
+  "main_retained": "CHANNEL_TABLE_FINAL154_V001",
+  "server_process_wall_seconds": 135.996388844,
+  "training_process_wall_seconds": 129.12316993088461,
+  "visual_fits": 30,
+  "epochs_per_fit": 16,
+  "calibration_fits": 10,
+  "optimizer_steps": 7264,
+  "all_scalar_solvers_success": true,
+  "a_range": [
+    0.18203594159589828,
+    0.21229705558226183
+  ],
+  "a_zero_real_folds": 0,
+  "protected33_used": false,
+  "external130_used": false,
+  "public15_used": false,
+  "applied_candidates": 3757,
+  "class_invariance_verified": {
+    "withdrawn": 114,
+    "promoted": 5
+  },
+  "control_exact": true,
+  "raw96_exact": true,
+  "comparisons": {
+    "strict": {
+      "RAW_VISUAL": {
+        "before": {
+          "tp": 601,
+          "fp": 112,
+          "fn": 79,
+          "precision": 0.8429172510518934,
+          "recall": 0.8838235294117647,
+          "f1": 0.8628858578607322
+        },
+        "after": {
+          "tp": 587,
+          "fp": 83,
+          "fn": 93,
+          "precision": 0.8761194029850746,
+          "recall": 0.8632352941176471,
+          "f1": 0.8696296296296296
+        },
+        "source_macro_before": 0.8697690423215146,
+        "source_macro_after": 0.8677802357166353,
+        "sources_up_down_tied": [
+          4,
+          5,
+          1
+        ],
+        "difference": {
+          "recovered_event_ids": [
+            "REUSE_07_007_E0016_B09",
+            "REUSE_14_006_E0016_B09"
+          ],
+          "lost_event_ids": [
+            "REUSE_01_001_E0002_B02",
+            "REUSE_01_002_E0002_B02",
+            "REUSE_01_002_E0006_B04",
+            "REUSE_01_003_E0002_B02",
+            "REUSE_05_001_E0070_B36",
+            "REUSE_05_001_E0076_B39",
+            "REUSE_07_007_E0008_B05",
+            "REUSE_08_005_E0002_B02",
+            "REUSE_10_002_E0002_B02",
+            "REUSE_10_005_E0001_B01",
+            "REUSE_10_006_E0001_B01",
+            "REUSE_10_007_E0016_B09",
+            "REUSE_15_007_E0002_B02",
+            "REUSE_15_007_E0004_B03",
+            "REUSE_19_005_E0005_B04",
+            "REUSE_19_007_E0005_B04"
+          ],
+          "delta": {
+            "tp": -14,
+            "fp": -29,
+            "fn": 14,
+            "f1": 0.0067437717688974
+          },
+          "recovered": 2,
+          "lost": 16
+        }
+      },
+      "CALIBRATED_FIXED_MEAN": {
+        "before": {
+          "tp": 601,
+          "fp": 112,
+          "fn": 79,
+          "precision": 0.8429172510518934,
+          "recall": 0.8838235294117647,
+          "f1": 0.8628858578607322
+        },
+        "after": {
+          "tp": 600,
+          "fp": 92,
+          "fn": 80,
+          "precision": 0.8670520231213873,
+          "recall": 0.8823529411764706,
+          "f1": 0.8746355685131195
+        },
+        "source_macro_before": 0.8697690423215146,
+        "source_macro_after": 0.8760892741781865,
+        "sources_up_down_tied": [
+          7,
+          2,
+          1
+        ],
+        "difference": {
+          "recovered_event_ids": [
+            "REUSE_14_006_E0016_B09"
+          ],
+          "lost_event_ids": [
+            "REUSE_05_001_E0070_B36",
+            "REUSE_19_007_E0005_B04"
+          ],
+          "delta": {
+            "tp": -1,
+            "fp": -20,
+            "fn": 1,
+            "f1": 0.01174971065238728
+          },
+          "recovered": 1,
+          "lost": 2
+        }
+      },
+      "CALIBRATED_SCALE_AWARE": {
+        "before": {
+          "tp": 601,
+          "fp": 112,
+          "fn": 79,
+          "precision": 0.8429172510518934,
+          "recall": 0.8838235294117647,
+          "f1": 0.8628858578607322
+        },
+        "after": {
+          "tp": 600,
+          "fp": 93,
+          "fn": 80,
+          "precision": 0.8658008658008658,
+          "recall": 0.8823529411764706,
+          "f1": 0.8739985433357611
+        },
+        "source_macro_before": 0.8697690423215146,
+        "source_macro_after": 0.875640766329299,
+        "sources_up_down_tied": [
+          7,
+          2,
+          1
+        ],
+        "difference": {
+          "recovered_event_ids": [
+            "REUSE_14_006_E0016_B09"
+          ],
+          "lost_event_ids": [
+            "REUSE_05_001_E0070_B36",
+            "REUSE_19_007_E0005_B04"
+          ],
+          "delta": {
+            "tp": -1,
+            "fp": -19,
+            "fn": 1,
+            "f1": 0.01111268547502886
+          },
+          "recovered": 1,
+          "lost": 2
+        }
+      }
+    },
+    "40ms": {
+      "RAW_VISUAL": {
+        "before": {
+          "tp": 622,
+          "fp": 81,
+          "fn": 58,
+          "precision": 0.8847795163584637,
+          "recall": 0.9147058823529411,
+          "f1": 0.8994938539407086
+        },
+        "after": {
+          "tp": 603,
+          "fp": 61,
+          "fn": 77,
+          "precision": 0.9081325301204819,
+          "recall": 0.8867647058823529,
+          "f1": 0.8973214285714286
+        },
+        "source_macro_before": 0.9008516382889681,
+        "source_macro_after": 0.8883371022399877,
+        "sources_up_down_tied": [
+          4,
+          4,
+          2
+        ],
+        "difference": {
+          "recovered_event_ids": [],
+          "lost_event_ids": [
+            "REUSE_01_001_E0002_B02",
+            "REUSE_01_002_E0002_B02",
+            "REUSE_01_002_E0006_B04",
+            "REUSE_01_003_E0002_B02",
+            "REUSE_05_001_E0070_B36",
+            "REUSE_05_001_E0076_B39",
+            "REUSE_07_007_E0008_B05",
+            "REUSE_08_005_E0002_B02",
+            "REUSE_10_002_E0002_B02",
+            "REUSE_10_005_E0001_B01",
+            "REUSE_10_006_E0001_B01",
+            "REUSE_10_006_E0006_B04",
+            "REUSE_10_007_E0016_B09",
+            "REUSE_13_004_E0004_B03",
+            "REUSE_15_005_E0001_B01",
+            "REUSE_15_007_E0002_B02",
+            "REUSE_15_007_E0004_B03",
+            "REUSE_19_005_E0005_B04",
+            "REUSE_19_007_E0005_B04"
+          ],
+          "delta": {
+            "tp": -19,
+            "fp": -20,
+            "fn": 19,
+            "f1": -0.0021724253692799733
+          },
+          "recovered": 0,
+          "lost": 19
+        }
+      },
+      "CALIBRATED_FIXED_MEAN": {
+        "before": {
+          "tp": 622,
+          "fp": 81,
+          "fn": 58,
+          "precision": 0.8847795163584637,
+          "recall": 0.9147058823529411,
+          "f1": 0.8994938539407086
+        },
+        "after": {
+          "tp": 620,
+          "fp": 66,
+          "fn": 60,
+          "precision": 0.9037900874635568,
+          "recall": 0.9117647058823529,
+          "f1": 0.9077598828696926
+        },
+        "source_macro_before": 0.9008516382889681,
+        "source_macro_after": 0.9041559835995351,
+        "sources_up_down_tied": [
+          6,
+          2,
+          2
+        ],
+        "difference": {
+          "recovered_event_ids": [],
+          "lost_event_ids": [
+            "REUSE_05_001_E0070_B36",
+            "REUSE_19_007_E0005_B04"
+          ],
+          "delta": {
+            "tp": -2,
+            "fp": -15,
+            "fn": 2,
+            "f1": 0.008266028928983982
+          },
+          "recovered": 0,
+          "lost": 2
+        }
+      },
+      "CALIBRATED_SCALE_AWARE": {
+        "before": {
+          "tp": 622,
+          "fp": 81,
+          "fn": 58,
+          "precision": 0.8847795163584637,
+          "recall": 0.9147058823529411,
+          "f1": 0.8994938539407086
+        },
+        "after": {
+          "tp": 620,
+          "fp": 67,
+          "fn": 60,
+          "precision": 0.9024745269286754,
+          "recall": 0.9117647058823529,
+          "f1": 0.9070958302852963
+        },
+        "source_macro_before": 0.9008516382889681,
+        "source_macro_after": 0.9036902254487675,
+        "sources_up_down_tied": [
+          6,
+          2,
+          2
+        ],
+        "difference": {
+          "recovered_event_ids": [],
+          "lost_event_ids": [
+            "REUSE_05_001_E0070_B36",
+            "REUSE_19_007_E0005_B04"
+          ],
+          "delta": {
+            "tp": -2,
+            "fp": -14,
+            "fn": 2,
+            "f1": 0.007601976344587702
+          },
+          "recovered": 0,
+          "lost": 2
+        }
+      }
+    }
+  },
+  "remaining_limits": [
+    "Source05 and19 each lose one real event. No recovered40ms event; improvement mainly false-positive rejection.",
+    "121 is repeatedly used development with source-held-out fits, not independent blind data.",
+    "No154 fit, external/public evaluation, complete inference FPS or deployment at this result time.",
+    "a0 checked algebraically, no real fitted outer fold selected a0."
+  ],
+  "evidence_sha256": {
+    "experiments/20261110_visual_calibration/protocol_v001.json": "2c4643aedfa2d30803379e82fc2022d11bb5871c88984c367007f2c5f996e8d2",
+    "experiments/20261110_visual_calibration/runs/server_full_runtime_v001/collection_20261110T081803735209Z/extracted/runs/research_v001/training/run_status.json": "48f1e5b7991f730e3a3f7e5313b352642cf20240ccb0a269be364ac1f526e059",
+    "experiments/20261110_visual_calibration/runs/server_full_runtime_v001/collection_20261110T081803735209Z/extracted/runs/research_v001/training/probabilities_by_video.json": "76d2b904da5cc326681d5a89e9bc1c793fb02380943f837ce3d76419191eab37",
+    "experiments/20261110_visual_calibration/runs/replay_v001/prediction_seal.json": "02aed6b3ed79bed0e76cd84ebc8ddb37e49721baf6c1f745816ba9337599d1a1",
+    "experiments/20261110_visual_calibration/runs/replay_v001/summary.json": "c4b6336d34a21a367a8af3c09cb04ad22aa23fe5391764f2b6be650159a7a467"
+  }
+}

@@ -1,0 +1,489 @@
+{
+  "archive_date": "2026-11-13",
+  "source_commit": "bde7d970e86fd94161ebe59dd7f51663fb71517b",
+  "official_zip_sha256": "93fa695d27596f085131756073669a5c255486a935e2c7b94ef7719270126052",
+  "final_joint_zip_sha256": "146ab5a42635c0cbdb6b25877c3a45981918a3d0c84b83af3abfd5f61fe06267",
+  "fast_overlay_sha256": "7986f48b4254a68e2fb9002556252bec573e9b75afa48c7d10dbd51a8681c863",
+  "default_solution_sha256": "2477d8718627beff24b698daa2cd442cac6800028422ba3ef998127930a4ef90",
+  "files": [
+    {
+      "path": "runtime/participant/channel_adaptation_v001/__init__.py",
+      "sha256": "25ada47cf0716da0c9ad18483053d817d5259851b538d7c57a9a3215a2a1d5fe",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/channel_adaptation_v001/__init__.py"
+    },
+    {
+      "path": "runtime/participant/channel_adaptation_v001/channel_detector.py",
+      "sha256": "232531f29ab7f51ac0a8cb967c77fd3730e925f9e86ba2546af20973adb2c23c",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/channel_adaptation_v001/channel_detector.py"
+    },
+    {
+      "path": "runtime/participant/channel_adaptation_v001/inputs.py",
+      "sha256": "f082718d7d5fdfc0dad0e45786fd7a8bcdbaf4ea2d82df8887c7d91f866a1ab6",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/channel_adaptation_v001/inputs.py"
+    },
+    {
+      "path": "runtime/participant/channel_adaptation_v001/runtime.py",
+      "sha256": "0f41ce7873f273abc101eb61d957bcf78c3a5571906b872c127a9f0acb3f1ea6",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/channel_adaptation_v001/runtime.py"
+    },
+    {
+      "path": "runtime/participant/channel_adaptation_v001/selector.py",
+      "sha256": "631e92b64ab62e8c9373f77a85e775c16322ea2ec140461fe62726ed93be667e",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/channel_adaptation_v001/selector.py"
+    },
+    {
+      "path": "runtime/participant/channel_adaptation_v001/solution.py",
+      "sha256": "e2e5fc73e2b35b00ab00b176246ea190e445be77f600e59c727db02e657d77b1",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/channel_adaptation_v001/solution.py"
+    },
+    {
+      "path": "runtime/participant/dense_context_v001/__init__.py",
+      "sha256": "b29d3ae70f7666dfdff585cf70a14dfaa5f000bd5a0e36cf9ad47f3cb781b797",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/dense_context_v001/__init__.py"
+    },
+    {
+      "path": "runtime/participant/dense_context_v001/candidates.py",
+      "sha256": "72340e4658a067d945a7151ded61122e1922abaf4212c2ea0492a21affe00d32",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/dense_context_v001/candidates.py"
+    },
+    {
+      "path": "runtime/participant/dense_context_v001/model.py",
+      "sha256": "6ecab75e8b5e7146421221565e7d9f07fb821115ad96352f79d0902e1d9c21f4",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/dense_context_v001/model.py"
+    },
+    {
+      "path": "runtime/participant/dense_context_v001/runtime.py",
+      "sha256": "c4105ab3f07cc8dc3004e1b9c094ed9c285830594f9216b9307aabe4642c0866",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/dense_context_v001/runtime.py"
+    },
+    {
+      "path": "runtime/participant/dense_context_v001/union_runtime.py",
+      "sha256": "234f9fded21d609cf44a5b7be712b123a342edaa1d65743c809a08899a8e8dbe",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/dense_context_v001/union_runtime.py"
+    },
+    {
+      "path": "runtime/participant/event_decision_v001/__init__.py",
+      "sha256": "68577498f97fa87ed57d42328f0f4ef3439e8ab02c8c3f3a7e374dd58e769e55",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/event_decision_v001/__init__.py"
+    },
+    {
+      "path": "runtime/participant/event_decision_v001/candidates.py",
+      "sha256": "606d2d761f24314aed0219c064711f5de074f0d6c6c7dfef7181bf72e05ff2f8",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/event_decision_v001/candidates.py"
+    },
+    {
+      "path": "runtime/participant/event_decision_v001/e03_events.py",
+      "sha256": "3e3cb14f51546db71239006a650b5de66d95537ec0817a3675f7957715727a6c",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/event_decision_v001/e03_events.py"
+    },
+    {
+      "path": "runtime/participant/event_decision_v001/model.py",
+      "sha256": "49d2eaac5cb75f61cbcfd70d6404c56f6f0d6150beb14b81278a3107c9fc395e",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/event_decision_v001/model.py"
+    },
+    {
+      "path": "runtime/participant/event_decision_v001/native_features.py",
+      "sha256": "8868301ca0f88f84699007bab2120eeb0dad10e7af74f07d797365ce3eab3159",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/event_decision_v001/native_features.py"
+    },
+    {
+      "path": "runtime/participant/event_decision_v001/normalization.py",
+      "sha256": "5a94aab218bd94aa8b4852bd89ffd0af755e739122ccda280a8a5770ef39ae2c",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/event_decision_v001/normalization.py"
+    },
+    {
+      "path": "runtime/participant/event_decision_v001/runtime.py",
+      "sha256": "89226bd599cb243f970c32540c3f9868ba3b08b48e26ff8d6cfe9f866acd2701",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/event_decision_v001/runtime.py"
+    },
+    {
+      "path": "runtime/participant/event_decision_v001/selection.py",
+      "sha256": "4c2b5fd792e4371f034a76f6fb0cd9a749a1774fe05569ecf5f2c26f91211b74",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/event_decision_v001/selection.py"
+    },
+    {
+      "path": "runtime/participant/event_decision_v001/trajectory_features.py",
+      "sha256": "aef154c62bf70e1a003fdbb512aa18e31a2cbad379f96857b50f1f46c5f5a2a0",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/event_decision_v001/trajectory_features.py"
+    },
+    {
+      "path": "runtime/participant/event_expert_fusion_v001/__init__.py",
+      "sha256": "b3dc478f42057a4eb4d12d0056c8aa9d15a86a5fb8881fd1e3462287c6bf9777",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/event_expert_fusion_v001/__init__.py"
+    },
+    {
+      "path": "runtime/participant/event_expert_fusion_v001/ensemble.py",
+      "sha256": "89eadf78207c656d8697f580c389c95be938c35f48026d8283e3ea49ca989ad8",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/event_expert_fusion_v001/ensemble.py"
+    },
+    {
+      "path": "runtime/participant/event_expert_fusion_v001/solution.py",
+      "sha256": "67d138286a3eb9dc922d20cc68ac64d0c6af4cbf12936814c6b5b121041dfc84",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/event_expert_fusion_v001/solution.py"
+    },
+    {
+      "path": "runtime/participant/event_union_v001/__init__.py",
+      "sha256": "dbe7da395c3adfd36a6e09b57b9429f2a8fdda407ebb1fbc0746bc220ed78f16",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/event_union_v001/__init__.py"
+    },
+    {
+      "path": "runtime/participant/event_union_v001/runtime.py",
+      "sha256": "a4ba71bf66ba2fcb671f39d39f7e529a5cdbe1ead203dab5e78205802cab4b1c",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/event_union_v001/runtime.py"
+    },
+    {
+      "path": "runtime/participant/event_window_v001/__init__.py",
+      "sha256": "39ac2a3349a177dfd8f02ca314fe24a9958842ee53c0fcda4ce08d01e3f48e9e",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/event_window_v001/__init__.py"
+    },
+    {
+      "path": "runtime/participant/event_window_v001/model.py",
+      "sha256": "072a095730f1b0d5af44a8e4514f864382567feede559b767d2fb0bedcaf68d5",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/event_window_v001/model.py"
+    },
+    {
+      "path": "runtime/participant/event_window_v001/runtime.py",
+      "sha256": "26b084e99fbbe8cf05ac4f099b50ba5ed0ec9391f58476781c9fc73399377ddf",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/event_window_v001/runtime.py"
+    },
+    {
+      "path": "runtime/participant/event_window_v001/selection.py",
+      "sha256": "bc1d4945c532a3bee5d30545e72f3a707ede8e76e0a55cd8344d5ea9fc0125a2",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/event_window_v001/selection.py"
+    },
+    {
+      "path": "runtime/participant/event_window_v001/windows.py",
+      "sha256": "613d71a648ca187d6af792bce652fd4e32295325f2493cb969e9e35db4acaf0f",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/event_window_v001/windows.py"
+    },
+    {
+      "path": "runtime/participant/gap_contact_v001/__init__.py",
+      "sha256": "ea7c188b4ff69d4d41f61790cb6e1455337513e56a4dc874947cb73fc42fc07a",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/gap_contact_v001/__init__.py"
+    },
+    {
+      "path": "runtime/participant/gap_contact_v001/proposal.py",
+      "sha256": "ae12c1def1017307b33b35d68753098c6d1ecdfd1e4f46e2b829935923bdda52",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/gap_contact_v001/proposal.py"
+    },
+    {
+      "path": "runtime/participant/masked_gap_v001/__init__.py",
+      "sha256": "8bedc13dd73fa0d246ccadda4037335929defbba7b5acf9aebfd371c095daecf",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/masked_gap_v001/__init__.py"
+    },
+    {
+      "path": "runtime/participant/masked_gap_v001/features.py",
+      "sha256": "6aed1097d68227d8e9802a113392b157e0606cd630ad10274e82a9456b81b77d",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/masked_gap_v001/features.py"
+    },
+    {
+      "path": "runtime/participant/masked_gap_v001/model.py",
+      "sha256": "9bdeea29a8b2930bfa44f51fa041d3eb8fc9e2b242141b36cd1ffa6b50fb6e71",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/masked_gap_v001/model.py"
+    },
+    {
+      "path": "runtime/participant/masked_gap_v001/runtime.py",
+      "sha256": "e427edcb263edf92cb6fe06b57a2a3a8f75c1647d6027f15527d080e1600df03",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/masked_gap_v001/runtime.py"
+    },
+    {
+      "path": "runtime/participant/native_time.py",
+      "sha256": "3d3017e9633c8426e3d164c46f1b34c62aa1bffa146877f32999a8b9e644fe6c",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/native_time.py"
+    },
+    {
+      "path": "runtime/participant/native_time_parallel.py",
+      "sha256": "f6883560ec244b028b4093d15c583774a0bb98bcf7596e37200e8f36f8e8eb68",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/native_time_parallel.py"
+    },
+    {
+      "path": "runtime/participant/p1_entry.py",
+      "sha256": "19280ff71fb4eb31d37072e01343a570b4cafaee609a0a2ec364c2b27ac3fad7",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/p1_entry.py"
+    },
+    {
+      "path": "runtime/participant/p1_pts_parallel.py",
+      "sha256": "486ec601ec57b1d7cf1c4b8e24a706eedda487774cb1dbf360e5523a3729edcb",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/p1_pts_parallel.py"
+    },
+    {
+      "path": "runtime/participant/runtime_backend.py",
+      "sha256": "bb538fbcfa845060a81a30c377c10ce6fafe59b994d8d9fa5781a271eb809e00",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/runtime_backend.py"
+    },
+    {
+      "path": "runtime/participant/solution.py",
+      "sha256": "2477d8718627beff24b698daa2cd442cac6800028422ba3ef998127930a4ef90",
+      "source": "experiments/20261110_captain_frame_overlap/runs/release_fast_v002/visual154_fast_overlay.zip!participant/pingpang/participant/solution.py"
+    },
+    {
+      "path": "runtime/participant/table_guard_v001/__init__.py",
+      "sha256": "545eda86a1925ce7b340dee94f90e2c8073f79493fa3fdad2f0354cad9bac4cf",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/table_guard_v001/__init__.py"
+    },
+    {
+      "path": "runtime/participant/table_guard_v001/channel_solution.py",
+      "sha256": "1467077ec7c575c0285ab61874c88c02b7f10201bf761b03a7c1b66b7a8ae3fb",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/table_guard_v001/channel_solution.py"
+    },
+    {
+      "path": "runtime/participant/table_guard_v001/model.py",
+      "sha256": "d046b64ead09b5cc9cd01e9732ab7c0af2f74722fe58f45f4f0a8faf1e7a41b1",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/table_guard_v001/model.py"
+    },
+    {
+      "path": "runtime/participant/table_guard_v001/prior.py",
+      "sha256": "bd0b0baabf0ce52a20834d151a72fc49968a9356f3d24fa1264283fe2234a7f9",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/table_guard_v001/prior.py"
+    },
+    {
+      "path": "runtime/participant/table_guard_v001/runtime.py",
+      "sha256": "469c775f2b21e0a1003e86619bcfc322aa0f8c9f8eb1af4fcf19bbe1e34bd052",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/table_guard_v001/runtime.py"
+    },
+    {
+      "path": "runtime/participant/table_guard_v001/sampling.py",
+      "sha256": "a2e983686682ddaa7a7b0cc1482575b52df4a0544e87ac6996e73b64a2887b81",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/table_guard_v001/sampling.py"
+    },
+    {
+      "path": "runtime/participant/visual_calibration_v001/calibration.py",
+      "sha256": "2338f0d12245518ea2fd623c3e139f806aa6b2f09d899b741cbd7c7787042626",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/visual_calibration_v001/calibration.py"
+    },
+    {
+      "path": "runtime/participant/visual_calibration_v001/model.py",
+      "sha256": "45d7bb77eff31c92d9d9dd0e8671d81c9b295dc108c71527ee2b56615a02e7ee",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/visual_calibration_v001/model.py"
+    },
+    {
+      "path": "runtime/participant/visual_calibration_v001/rgb.py",
+      "sha256": "7d27384caa04eb8017559ef88cb1a0beffdf1a4b0df77eee469d2381f9f26708",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/visual_calibration_v001/rgb.py"
+    },
+    {
+      "path": "runtime/participant/visual_calibration_v001/runtime.py",
+      "sha256": "e9e65d15a035932beaf5ebf38e1643eb03976d9cb35ce6f4255b8436b1b8625d",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/visual_calibration_v001/runtime.py"
+    },
+    {
+      "path": "runtime/participant/visual_calibration_v001/shortlist.py",
+      "sha256": "0de601a1217eaf1760c897ae1fb0067b6b02bae44b8f5b214e7673d4aef3647f",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/visual_calibration_v001/shortlist.py"
+    },
+    {
+      "path": "runtime/participant/visual_calibration_v001/solution.py",
+      "sha256": "a3526d72b133e6903e6b149d1c75a5248c796ed3156e5972f9e9bebd7bf0b5bc",
+      "source": "experiments/20261110_joint_final_acceptance/runs/joint_package_v002/participant/pingpang/participant/visual_calibration_v001/solution.py"
+    },
+    {
+      "path": "runtime/participant/visual_fast_cpu_v001.py",
+      "sha256": "a7c253f5e26731d68bfda63bcc29872c2e2c4a12da304e1b6bd5e4197dee7b99",
+      "source": "experiments/20261110_captain_frame_overlap/runs/release_fast_v002/visual154_fast_overlay.zip!participant/pingpang/participant/visual_fast_cpu_v001.py"
+    },
+    {
+      "path": "runtime/participant/visual_fast_v002.py",
+      "sha256": "bd1e6893a22cd06dbd652511213418f4a26a7f0a682ff75c167720dfd241c26a",
+      "source": "experiments/20261110_captain_frame_overlap/runs/release_fast_v002/visual154_fast_overlay.zip!participant/pingpang/participant/visual_fast_v002.py"
+    },
+    {
+      "path": "runtime/participant/visual_native_window_v001/features.py",
+      "sha256": "46bc3fc481be1b30385a80d3b7a0dea9aedddabbb412b6a685f4d0b65d6e23c1",
+      "source": "experiments/20261110_captain_frame_overlap/runs/release_fast_v002/visual154_fast_overlay.zip!participant/pingpang/participant/visual_native_window_v001/features.py"
+    },
+    {
+      "path": "runtime/participant/visual_native_window_v001/solution.py",
+      "sha256": "850906228ab78b9adfed63dfd4969d5fdd76fdd605316638285bcb1ad57b1764",
+      "source": "experiments/20261110_captain_frame_overlap/runs/release_fast_v002/visual154_fast_overlay.zip!participant/pingpang/participant/visual_native_window_v001/solution.py"
+    },
+    {
+      "path": "research/20261108_channel_event_adaptation/code/build_dataset.py",
+      "sha256": "afe3d4eeb557b9ff80caf7646c03287a02e9c30f4007e9c4016930d3d34d527b",
+      "source": "experiments/20261108_channel_event_adaptation/code/build_dataset.py",
+      "scope": "Historical research source; requires original caches and helpers"
+    },
+    {
+      "path": "research/20261108_channel_event_adaptation/code/train_adapted.py",
+      "sha256": "a4274bdb31e73ba76ef45764ee59d467b76712c48dd333a9424f9e5b976b1078",
+      "source": "experiments/20261108_channel_event_adaptation/code/train_adapted.py",
+      "scope": "Historical research source; requires original caches and helpers"
+    },
+    {
+      "path": "research/20261108_channel_event_adaptation/code/fit_deployment.py",
+      "sha256": "ce704ed7dd0d2b6dfb6fe14d71f3a395d6c02e5950bbd1abf43cf8c5a4c2fc37",
+      "source": "experiments/20261108_channel_event_adaptation/code/fit_deployment.py",
+      "scope": "Historical research source; requires original caches and helpers"
+    },
+    {
+      "path": "research/20261108_channel_event_adaptation/code/evaluate_adapted.py",
+      "sha256": "fea57b33bace32cf1f46b50ef9b44ad03da330acb7c6e270750ce10442c04fa4",
+      "source": "experiments/20261108_channel_event_adaptation/code/evaluate_adapted.py",
+      "scope": "Historical research source; requires original caches and helpers"
+    },
+    {
+      "path": "research/20261107_masked_gap_decision/code/build_dataset.py",
+      "sha256": "f27288a5a952d24a162f6286086e006fad4b6449c722c7cac8292b2997f079a8",
+      "source": "experiments/20261107_masked_gap_decision/code/build_dataset.py",
+      "scope": "Historical research source; requires original caches and helpers"
+    },
+    {
+      "path": "research/20261107_masked_gap_decision/code/train_evaluate.py",
+      "sha256": "f93e9335b8254c094985d41497ef3d4b7f331c28702d23e8db9582b89f882313",
+      "source": "experiments/20261107_masked_gap_decision/code/train_evaluate.py",
+      "scope": "Historical research source; requires original caches and helpers"
+    },
+    {
+      "path": "research/20261107_masked_gap_decision/code/fit_deployment.py",
+      "sha256": "ec0760dee558cf3a9160d6a552d8872a93a217d3be7cd787fba725c7f437389d",
+      "source": "experiments/20261107_masked_gap_decision/code/fit_deployment.py",
+      "scope": "Historical research source; requires original caches and helpers"
+    },
+    {
+      "path": "research/20261108_table_module_refinement/code/train_table_refined.py",
+      "sha256": "8a558949451242fe00f8fed30637c1dcfa4b840f32783867fcdde680da11e13d",
+      "source": "experiments/20261108_table_module_refinement/code/train_table_refined.py",
+      "scope": "Historical research source; requires original caches and helpers"
+    },
+    {
+      "path": "research/20261108_table_module_refinement/code/evaluate_refined.py",
+      "sha256": "e9db742c8ea62c33dc0c5d6601b373609c9dc5cb307d1cc1e38f10fc10b41f6a",
+      "source": "experiments/20261108_table_module_refinement/code/evaluate_refined.py",
+      "scope": "Historical research source; requires original caches and helpers"
+    },
+    {
+      "path": "research/20261109_final154_refit/code/check_inputs.py",
+      "sha256": "6d513105095261d7466cae9d122e989cb3424803f9657c63fae1fe0c70dd3d4c",
+      "source": "experiments/20261109_final154_refit/code/check_inputs.py",
+      "scope": "Historical research source; requires original caches and helpers"
+    },
+    {
+      "path": "research/20261109_final154_refit/code/refit_dense_window.py",
+      "sha256": "b24c80e754ffc101481df891cc1b387379b86864b006166d708cefb1a91a7fb3",
+      "source": "experiments/20261109_final154_refit/code/refit_dense_window.py",
+      "scope": "Historical research source; requires original caches and helpers"
+    },
+    {
+      "path": "research/20261109_final154_refit/code/refit_gap.py",
+      "sha256": "2fa8693bfdd5da085ed8f6c01ebdc5174282f23d3323eb3ba0c66e69ff115425",
+      "source": "experiments/20261109_final154_refit/code/refit_gap.py",
+      "scope": "Historical research source; requires original caches and helpers"
+    },
+    {
+      "path": "research/20261109_final154_refit/code/refit_table.py",
+      "sha256": "1147aa9e5498bbe17ac6667a9a81532e9ecaff5d25d844b80a83b58d75f86a11",
+      "source": "experiments/20261109_final154_refit/code/refit_table.py",
+      "scope": "Historical research source; requires original caches and helpers"
+    },
+    {
+      "path": "research/20261109_final154_refit/code/score_final154.py",
+      "sha256": "d27ae2f07c822202332a00eeba7bc12efe731a4efe30291402955c670e5112e1",
+      "source": "experiments/20261109_final154_refit/code/score_final154.py",
+      "scope": "Historical research source; requires original caches and helpers"
+    },
+    {
+      "path": "research/20261110_visual_calibration/code/prepare_nested_plan.py",
+      "sha256": "6f6a0ffd97c486dd7c68a0fe6a9eabffd63c759d8b84a05bcdb14290674c74c0",
+      "source": "experiments/20261110_visual_calibration/code/prepare_nested_plan.py",
+      "scope": "Historical research source; requires original caches and helpers"
+    },
+    {
+      "path": "research/20261110_visual_calibration/code/train_nested_visual.py",
+      "sha256": "e1145393b7667ada8aae1c5cee81d8202281679ef53489d0e12e5faaa26e0fd3",
+      "source": "experiments/20261110_visual_calibration/code/train_nested_visual.py",
+      "scope": "Historical research source; requires original caches and helpers"
+    },
+    {
+      "path": "research/20261110_visual_calibration/code/prepare_final_plan.py",
+      "sha256": "85dbda5f1ebca2cc83d0333e671aa117fe5352cf57e692e609d57960eb8b5304",
+      "source": "experiments/20261110_visual_calibration/code/prepare_final_plan.py",
+      "scope": "Historical research source; requires original caches and helpers"
+    },
+    {
+      "path": "research/20261110_visual_calibration/code/train_final_visual.py",
+      "sha256": "f13407f2be4535cb2ba73484ac9603fbeaacc21999dd684ee0241bbe5f0bc600",
+      "source": "experiments/20261110_visual_calibration/code/train_final_visual.py",
+      "scope": "Historical research source; requires original caches and helpers"
+    },
+    {
+      "path": "research/20261110_visual_calibration/code/extract_final_stem.py",
+      "sha256": "f3cac0f5ce790d95cc4a3391bc6670dd27d3434dd20371bfd72ed5ada9ec3d67",
+      "source": "experiments/20261110_visual_calibration/code/extract_final_stem.py",
+      "scope": "Historical research source; requires original caches and helpers"
+    },
+    {
+      "path": "research/20261110_visual_calibration/code/replay_calibration.py",
+      "sha256": "e6597fb53033a60bd50b52072bbe04575741f5704a7389c5dd515a109589d956",
+      "source": "experiments/20261110_visual_calibration/code/replay_calibration.py",
+      "scope": "Historical research source; requires original caches and helpers"
+    },
+    {
+      "path": "research/20261110_visual_calibration/code/score_final_pair.py",
+      "sha256": "7b3351a452171ba136a4cfacc162dfbefa8dbc2cd6b8325c4b78c06318e1f73e",
+      "source": "experiments/20261110_visual_calibration/code/score_final_pair.py",
+      "scope": "Historical research source; requires original caches and helpers"
+    },
+    {
+      "path": "research/20261110_visual_calibration/protocol_v001.json",
+      "sha256": "05b8baa94c9241cff1a6a27c89390b7d5f6badcb4db899376d8c5d432fa0f336",
+      "source": "experiments/20261110_visual_calibration/protocol_v001.json",
+      "original_sha256": "2c4643aedfa2d30803379e82fc2022d11bb5871c88984c367007f2c5f996e8d2",
+      "transformation": "Private paths normalized"
+    },
+    {
+      "path": "research/20261110_visual_calibration/final_protocol_v001.json",
+      "sha256": "12326de8a9da46b1c2caa30a6bceea5587ee2c1164d6164dcb9d4e5943d22974",
+      "source": "experiments/20261110_visual_calibration/final_protocol_v001.json",
+      "original_sha256": "b4c3500ed90b3e6a243c63ff591a26d9eb8d31cb27f1087f29419c93f1534052",
+      "transformation": "Private paths normalized"
+    },
+    {
+      "path": "evidence/external130_five_versions.json",
+      "sha256": "a21cf032c835a03202bb6b0bcb34a5ed095c240350364c1267b5285a05bd3dd0",
+      "source": "experiments/20261109_external130_fixed_comparison/analysis/results_v001.json",
+      "original_sha256": "a21cf032c835a03202bb6b0bcb34a5ed095c240350364c1267b5285a05bd3dd0",
+      "transformation": "JSON reformatted; machine paths normalized; metric values unchanged"
+    },
+    {
+      "path": "evidence/final154_comparison.json",
+      "sha256": "75c50f2aad64d38a8b03c5980d7822097083d5e72c09e41385106d448938e253",
+      "source": "experiments/20261109_final154_refit/analysis/final_comparison_v001.json",
+      "original_sha256": "75c50f2aad64d38a8b03c5980d7822097083d5e72c09e41385106d448938e253",
+      "transformation": "JSON reformatted; machine paths normalized; metric values unchanged"
+    },
+    {
+      "path": "evidence/visual_calibration_research.json",
+      "sha256": "9d1af647f454dc89dc663f92dfb3a7e6ee9c5253e75ef8d337e50779fc5494b0",
+      "source": "experiments/20261110_visual_calibration/analysis/research_result_v001.json",
+      "original_sha256": "9d1af647f454dc89dc663f92dfb3a7e6ee9c5253e75ef8d337e50779fc5494b0",
+      "transformation": "JSON reformatted; machine paths normalized; metric values unchanged"
+    },
+    {
+      "path": "evidence/visual_calibration_final_scores.json",
+      "sha256": "71f967b15c609838c3861fd787fc2fd6e6588383787bdef7303e2b4d891743e3",
+      "source": "experiments/20261110_visual_calibration/runs/final_scores_v001/summary.json",
+      "original_sha256": "8c1750f8600540a79ef3fd5b8bd69b73e7983059ebbf3978138210cb479d3533",
+      "transformation": "JSON reformatted; machine paths normalized; metric values unchanged"
+    },
+    {
+      "path": "evidence/visual_calibration_decision.json",
+      "sha256": "789a5d362bb4b4d6dd54780773c6006d958e402aaeedeb980232f0c5f7cf1998",
+      "source": "experiments/20261110_visual_calibration/analysis/final_decision_v001.json",
+      "original_sha256": "c4f834ee9a38b7732963a95b0dc82f12f0952fa52c4e70cd94cb328d5634583f",
+      "transformation": "JSON reformatted; machine paths normalized; metric values unchanged"
+    },
+    {
+      "path": "evidence/captain_final_public_score.json",
+      "sha256": "9403b14b1e42b7e7900d1a7559e70bf8cd920cb8dd9baa95cf7c3201fbf2456a",
+      "source": "experiments/20261110_captain_frame_overlap/runs/selftest_fast_v003/public_score.json",
+      "original_sha256": "b1cdfcb89083ff7a6f70f80b4a27960847308cd291a01126ed262d7f7afcdab9",
+      "transformation": "JSON reformatted; machine paths normalized; metric values unchanged"
+    },
+    {
+      "path": "evidence/captain_final_release_receipt.json",
+      "sha256": "aebec10c680e54ed5d5e77680c1b36263552d576db3cb3614f8d91886858a9a5",
+      "source": "experiments/20261110_captain_frame_overlap/runs/selftest_fast_v003/release_receipt.json",
+      "original_sha256": "1d8d6940106988c506c4ca313a7a9eac50a40d5818f725e29f10b4530dc364d0",
+      "transformation": "JSON reformatted; machine paths normalized; metric values unchanged"
+    }
+  ]
+}

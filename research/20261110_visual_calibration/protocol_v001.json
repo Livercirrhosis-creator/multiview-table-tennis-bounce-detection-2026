@@ -1,0 +1,85 @@
+{
+  "schema": "nested_visual_calibration.v1",
+  "date_shanghai": "2026-11-10",
+  "question": "Can source-isolated weak-supervision evidence-scale fitting preserve useful visual rejection while preventing excessive rejection of real contacts?",
+  "main_retained": "CHANNEL_TABLE_FINAL154_V001",
+  "scope": {
+    "development_videos": 121,
+    "outer_sources": 10,
+    "former33_used": false,
+    "external130_used": false,
+    "public15_used": false,
+    "all_real_fitting_on_server": true
+  },
+  "reuse": {
+    "visual_experiment": "experiments/20261110_adapted_visual_contact",
+    "visual_recipe": "Unchanged ImageNet initialization, frozen stem/BN, trainable tail/head,16epochs,seed20261109,original event bags/backgrounds",
+    "candidates": 17559,
+    "table_event_bags": 613,
+    "racket_event_bags": 555,
+    "legal_background_rows": 13924,
+    "new_media_extraction": false,
+    "outer_models_reused": 10
+  },
+  "nested_design": {
+    "inner_folds_per_outer": 3,
+    "new_visual_fits": 30,
+    "calibration_fits": 10,
+    "group_assignment": "Within each outer train side only, sort9sources by decreasing candidate count then family name; greedily assign to smallest-candidate bin having fewer than3sources, ties by bin ID",
+    "isolation": "Each inner model trains6sources and predicts3 other outer-train sources; neither side contains outer-held source; every outer-train video predicted once for calibration",
+    "initialization": "Every inner model starts from original ImageNet, never the full9-source model",
+    "application": "Fit a scalar from pooled inner OOF training-side predictions, apply only to existing full9-source model predictions for the outer-held source",
+    "remaining_limit": "6-source to9-source confidence-distribution transfer is not guaranteed; final outer source-held-out chain is the test"
+  },
+  "calibration": {
+    "parameter": "inverse_temperature_a",
+    "bounds": [
+      0,
+      1
+    ],
+    "bound_reason": "Fixed test of reducing excessive visual certainty; no amplification beyond the original visual model",
+    "formula": "q=softmax(a*log(max(p,1e-30)))",
+    "probability_floor_before_log": 1e-30,
+    "objective": "0.5*mean(original event-bag latent target NLL plus competing-contact exclusion loss)+0.5*mean(all legal background NLL),using outer-training-side inner OOF only",
+    "ambiguous_event_frames": "Original interval bags stay bags; do not label every member positive",
+    "source_reweighting": false,
+    "optimizer": "scipy.optimize.minimize_scalar(method=bounded,bounds=(0,1),xatol=1e-5,maxiter=100),compare its solution and both endpoints on the same training objective",
+    "interpretation": "Weak-supervision evidence-scale adaptation, not proof of calibrated per-frame probabilities or a globally optimal scalar",
+    "no_f1_parameter_search": true
+  },
+  "integration": {
+    "shortlist": "Frozen original strict-boundary3757-candidate shortlist, always generated from unmodified CHANNEL heads",
+    "fusion_floor": 1e-08,
+    "calibrated_fixed_mean": "Original normalized sqrt(max(dense,1e-8)*max(q,1e-8)); diagnostic only",
+    "scale_aware_primary": "Take calibrated fixed-mean probabilities to power2/(1+a) then renormalize; when a=0 return original dense probabilities exactly, when a=1 retain original fusion arithmetic",
+    "reason": "Uniform visual evidence must not halve dense log-margin in later competition with the unchanged window branch",
+    "other_chain_parts": "Original candidate/time/XY, window, gap, table and80ms conflict remain fixed",
+    "arms": [
+      "CHANNEL_CONTROL",
+      "RAW_VISUAL",
+      "CALIBRATED_FIXED_MEAN",
+      "CALIBRATED_SCALE_AWARE"
+    ],
+    "adoption_arm_fixed_in_advance": "CALIBRATED_SCALE_AWARE",
+    "diagnostic_arm_selection": "Do not retrospectively adopt a different diagnostic arm based on outer-held results"
+  },
+  "evaluation": {
+    "seal_all_predictions_before_scoring": true,
+    "control": "Reproduce original CHANNEL and prior raw96-visual frame/PTS/XY exactly",
+    "metrics": "121 strict/40ms temporal F1,source changes,recovered/lost events,class/dense-selection/union/gap/table stage changes",
+    "continue": "Primary genuinely improves complete-chain effect across sources and materially reduces previous true-contact rejection; returning to control or only fewer outputs is insufficient",
+    "confirmation": "If justified, freeze recipe, fit154 and require external130/public15 preset main metrics to improve with complete inference>=55FPS",
+    "former33": "Already training-in for main154, never an independent holdout now",
+    "stop": "No convincing net gain or source-general benefit; no follow-on temperature/weight/epoch sweep"
+  },
+  "budget": {
+    "server_poll_minutes": 5,
+    "new_rgb_decoding": 0,
+    "stem_cache_download": false,
+    "inner_checkpoint_download": false
+  },
+  "references": [
+    "https://proceedings.mlr.press/v70/guo17a.html",
+    "https://scikit-learn.org/stable/modules/generated/sklearn.calibration.CalibratedClassifierCV.html"
+  ]
+}

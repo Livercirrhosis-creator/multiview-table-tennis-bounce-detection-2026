@@ -1,0 +1,1545 @@
+{
+  "schema": "external130_results_compact.v1",
+  "full_summary_sha256": "815d55cc0de431b066f041198cb74874dd1856f20ced11dad50f84f5159cd382",
+  "full_summary_path": "analysis/comparison_summary_v001.json",
+  "training_runs": 0,
+  "full_inference_runs": 5,
+  "scoring_invocations": 5,
+  "not_official_score": true,
+  "tables": {
+    "safe": {
+      "all130_diagnostic": [
+        {
+          "arm": "OFFICIAL",
+          "fps": 65.2,
+          "time": {
+            "TP": 467,
+            "FP": 276,
+            "FN": 346,
+            "precision": 0.6285329744279946,
+            "recall": 0.5744157441574416,
+            "F1": 0.6002570694087404,
+            "predictions": 800,
+            "scored_events": 813,
+            "ignored_predictions": 57,
+            "excluded_special_events": 25,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 80,
+            "excluded_unresolved_type_events": 21,
+            "ignored_unresolved_type_predictions": 14
+          },
+          "spatiotemporal": {
+            "TP": 440,
+            "FP": 295,
+            "FN": 348,
+            "precision": 0.5986394557823129,
+            "recall": 0.5583756345177665,
+            "F1": 0.5778069599474721,
+            "predictions": 800,
+            "scored_events": 788,
+            "ignored_predictions": 65,
+            "excluded_special_events": 25,
+            "excluded_without_coordinate_events": 25,
+            "unknown_ranges": 80,
+            "excluded_unresolved_type_events": 21,
+            "ignored_unresolved_type_predictions": 12
+          },
+          "source_macro_time_F1": 0.5686428750973758,
+          "sensitivity_F1": {
+            "representative_time": 0.6002570694087404,
+            "representative_spatiotemporal": 0.5778069599474721,
+            "interval_time_sensitivity": 0.6182519280205655,
+            "interval_spatiotemporal_sensitivity": 0.5843729481286933,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.6014445173998687
+          }
+        },
+        {
+          "arm": "STATIC_FINAL",
+          "fps": 47.5,
+          "time": {
+            "TP": 590,
+            "FP": 124,
+            "FN": 223,
+            "precision": 0.8263305322128851,
+            "recall": 0.7257072570725708,
+            "F1": 0.7727570399476097,
+            "predictions": 763,
+            "scored_events": 813,
+            "ignored_predictions": 49,
+            "excluded_special_events": 25,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 80,
+            "excluded_unresolved_type_events": 21,
+            "ignored_unresolved_type_predictions": 15
+          },
+          "spatiotemporal": {
+            "TP": 554,
+            "FP": 148,
+            "FN": 234,
+            "precision": 0.7891737891737892,
+            "recall": 0.7030456852791879,
+            "F1": 0.7436241610738255,
+            "predictions": 763,
+            "scored_events": 788,
+            "ignored_predictions": 61,
+            "excluded_special_events": 25,
+            "excluded_without_coordinate_events": 25,
+            "unknown_ranges": 80,
+            "excluded_unresolved_type_events": 21,
+            "ignored_unresolved_type_predictions": 13
+          },
+          "source_macro_time_F1": 0.7525242170496153,
+          "sensitivity_F1": {
+            "representative_time": 0.7727570399476097,
+            "representative_spatiotemporal": 0.7436241610738255,
+            "interval_time_sensitivity": 0.7845448592010478,
+            "interval_spatiotemporal_sensitivity": 0.748993288590604,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.7691275167785235
+          }
+        },
+        {
+          "arm": "MASKED_TABLE",
+          "fps": 53.7,
+          "time": {
+            "TP": 649,
+            "FP": 168,
+            "FN": 164,
+            "precision": 0.7943696450428397,
+            "recall": 0.7982779827798278,
+            "F1": 0.7963190184049079,
+            "predictions": 872,
+            "scored_events": 813,
+            "ignored_predictions": 55,
+            "excluded_special_events": 25,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 80,
+            "excluded_unresolved_type_events": 21,
+            "ignored_unresolved_type_predictions": 13
+          },
+          "spatiotemporal": {
+            "TP": 599,
+            "FP": 204,
+            "FN": 189,
+            "precision": 0.7459526774595268,
+            "recall": 0.7601522842639594,
+            "F1": 0.7529855436832181,
+            "predictions": 872,
+            "scored_events": 788,
+            "ignored_predictions": 69,
+            "excluded_special_events": 25,
+            "excluded_without_coordinate_events": 25,
+            "unknown_ranges": 80,
+            "excluded_unresolved_type_events": 21,
+            "ignored_unresolved_type_predictions": 12
+          },
+          "source_macro_time_F1": 0.7875103527560384,
+          "sensitivity_F1": {
+            "representative_time": 0.7963190184049079,
+            "representative_spatiotemporal": 0.7529855436832181,
+            "interval_time_sensitivity": 0.8122699386503067,
+            "interval_spatiotemporal_sensitivity": 0.7610062893081762,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.7886792452830189
+          }
+        },
+        {
+          "arm": "CHANNEL_TABLE",
+          "fps": 55.2,
+          "time": {
+            "TP": 673,
+            "FP": 196,
+            "FN": 140,
+            "precision": 0.7744533947065593,
+            "recall": 0.8277982779827798,
+            "F1": 0.8002378121284186,
+            "predictions": 930,
+            "scored_events": 813,
+            "ignored_predictions": 61,
+            "excluded_special_events": 25,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 80,
+            "excluded_unresolved_type_events": 21,
+            "ignored_unresolved_type_predictions": 15
+          },
+          "spatiotemporal": {
+            "TP": 630,
+            "FP": 227,
+            "FN": 158,
+            "precision": 0.73512252042007,
+            "recall": 0.799492385786802,
+            "F1": 0.7659574468085106,
+            "predictions": 930,
+            "scored_events": 788,
+            "ignored_predictions": 73,
+            "excluded_special_events": 25,
+            "excluded_without_coordinate_events": 25,
+            "unknown_ranges": 80,
+            "excluded_unresolved_type_events": 21,
+            "ignored_unresolved_type_predictions": 13
+          },
+          "source_macro_time_F1": 0.7960133374218169,
+          "sensitivity_F1": {
+            "representative_time": 0.8002378121284186,
+            "representative_spatiotemporal": 0.7659574468085106,
+            "interval_time_sensitivity": 0.8156956004756243,
+            "interval_spatiotemporal_sensitivity": 0.7732522796352583,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.7975683890577507
+          }
+        },
+        {
+          "arm": "STREAM3D_TABLE_FAST",
+          "fps": 45.5,
+          "time": {
+            "TP": 670,
+            "FP": 211,
+            "FN": 143,
+            "precision": 0.7604994324631101,
+            "recall": 0.8241082410824109,
+            "F1": 0.7910271546635183,
+            "predictions": 936,
+            "scored_events": 813,
+            "ignored_predictions": 55,
+            "excluded_special_events": 25,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 80,
+            "excluded_unresolved_type_events": 21,
+            "ignored_unresolved_type_predictions": 13
+          },
+          "spatiotemporal": {
+            "TP": 620,
+            "FP": 248,
+            "FN": 168,
+            "precision": 0.7142857142857143,
+            "recall": 0.7868020304568528,
+            "F1": 0.748792270531401,
+            "predictions": 936,
+            "scored_events": 788,
+            "ignored_predictions": 68,
+            "excluded_special_events": 25,
+            "excluded_without_coordinate_events": 25,
+            "unknown_ranges": 80,
+            "excluded_unresolved_type_events": 21,
+            "ignored_unresolved_type_predictions": 12
+          },
+          "source_macro_time_F1": 0.7793905070128493,
+          "sensitivity_F1": {
+            "representative_time": 0.7910271546635183,
+            "representative_spatiotemporal": 0.748792270531401,
+            "interval_time_sensitivity": 0.8028335301062574,
+            "interval_spatiotemporal_sensitivity": 0.7552870090634441,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.7806646525679758
+          }
+        }
+      ],
+      "camera_screened89_provisional": [
+        {
+          "arm": "OFFICIAL",
+          "fps": 65.2,
+          "time": {
+            "TP": 315,
+            "FP": 199,
+            "FN": 235,
+            "precision": 0.6128404669260701,
+            "recall": 0.5727272727272728,
+            "F1": 0.5921052631578947,
+            "predictions": 548,
+            "scored_events": 550,
+            "ignored_predictions": 34,
+            "excluded_special_events": 21,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 50,
+            "excluded_unresolved_type_events": 6,
+            "ignored_unresolved_type_predictions": 4
+          },
+          "spatiotemporal": {
+            "TP": 303,
+            "FP": 208,
+            "FN": 235,
+            "precision": 0.5929549902152642,
+            "recall": 0.5631970260223048,
+            "F1": 0.5776930409914204,
+            "predictions": 548,
+            "scored_events": 538,
+            "ignored_predictions": 37,
+            "excluded_special_events": 21,
+            "excluded_without_coordinate_events": 12,
+            "unknown_ranges": 50,
+            "excluded_unresolved_type_events": 6,
+            "ignored_unresolved_type_predictions": 3
+          },
+          "source_macro_time_F1": 0.5617077090513634,
+          "sensitivity_F1": {
+            "representative_time": 0.5921052631578947,
+            "representative_spatiotemporal": 0.5776930409914204,
+            "interval_time_sensitivity": 0.6127819548872181,
+            "interval_spatiotemporal_sensitivity": 0.5872259294566253,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.6005719733079123
+          }
+        },
+        {
+          "arm": "STATIC_FINAL",
+          "fps": 47.5,
+          "time": {
+            "TP": 402,
+            "FP": 96,
+            "FN": 148,
+            "precision": 0.8072289156626506,
+            "recall": 0.730909090909091,
+            "F1": 0.767175572519084,
+            "predictions": 526,
+            "scored_events": 550,
+            "ignored_predictions": 28,
+            "excluded_special_events": 21,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 50,
+            "excluded_unresolved_type_events": 6,
+            "ignored_unresolved_type_predictions": 5
+          },
+          "spatiotemporal": {
+            "TP": 385,
+            "FP": 108,
+            "FN": 153,
+            "precision": 0.7809330628803245,
+            "recall": 0.7156133828996283,
+            "F1": 0.7468477206595538,
+            "predictions": 526,
+            "scored_events": 538,
+            "ignored_predictions": 33,
+            "excluded_special_events": 21,
+            "excluded_without_coordinate_events": 12,
+            "unknown_ranges": 50,
+            "excluded_unresolved_type_events": 6,
+            "ignored_unresolved_type_predictions": 4
+          },
+          "source_macro_time_F1": 0.7499572483942909,
+          "sensitivity_F1": {
+            "representative_time": 0.767175572519084,
+            "representative_spatiotemporal": 0.7468477206595538,
+            "interval_time_sensitivity": 0.7805343511450382,
+            "interval_spatiotemporal_sensitivity": 0.7546071774975752,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.7681862269641125
+          }
+        },
+        {
+          "arm": "MASKED_TABLE",
+          "fps": 53.7,
+          "time": {
+            "TP": 440,
+            "FP": 122,
+            "FN": 110,
+            "precision": 0.7829181494661922,
+            "recall": 0.8,
+            "F1": 0.7913669064748201,
+            "predictions": 600,
+            "scored_events": 550,
+            "ignored_predictions": 38,
+            "excluded_special_events": 21,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 50,
+            "excluded_unresolved_type_events": 6,
+            "ignored_unresolved_type_predictions": 4
+          },
+          "spatiotemporal": {
+            "TP": 416,
+            "FP": 140,
+            "FN": 122,
+            "precision": 0.7482014388489209,
+            "recall": 0.7732342007434945,
+            "F1": 0.7605118829981719,
+            "predictions": 600,
+            "scored_events": 538,
+            "ignored_predictions": 44,
+            "excluded_special_events": 21,
+            "excluded_without_coordinate_events": 12,
+            "unknown_ranges": 50,
+            "excluded_unresolved_type_events": 6,
+            "ignored_unresolved_type_predictions": 4
+          },
+          "source_macro_time_F1": 0.7869471705048544,
+          "sensitivity_F1": {
+            "representative_time": 0.7913669064748201,
+            "representative_spatiotemporal": 0.7605118829981719,
+            "interval_time_sensitivity": 0.8129496402877698,
+            "interval_spatiotemporal_sensitivity": 0.7703568161024703,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.7904849039341263
+          }
+        },
+        {
+          "arm": "CHANNEL_TABLE",
+          "fps": 55.2,
+          "time": {
+            "TP": 461,
+            "FP": 140,
+            "FN": 89,
+            "precision": 0.7670549084858569,
+            "recall": 0.8381818181818181,
+            "F1": 0.8010425716768028,
+            "predictions": 643,
+            "scored_events": 550,
+            "ignored_predictions": 42,
+            "excluded_special_events": 21,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 50,
+            "excluded_unresolved_type_events": 6,
+            "ignored_unresolved_type_predictions": 4
+          },
+          "spatiotemporal": {
+            "TP": 439,
+            "FP": 156,
+            "FN": 99,
+            "precision": 0.7378151260504202,
+            "recall": 0.8159851301115242,
+            "F1": 0.7749338040600177,
+            "predictions": 643,
+            "scored_events": 538,
+            "ignored_predictions": 48,
+            "excluded_special_events": 21,
+            "excluded_without_coordinate_events": 12,
+            "unknown_ranges": 50,
+            "excluded_unresolved_type_events": 6,
+            "ignored_unresolved_type_predictions": 4
+          },
+          "source_macro_time_F1": 0.8043851547584893,
+          "sensitivity_F1": {
+            "representative_time": 0.8010425716768028,
+            "representative_spatiotemporal": 0.7749338040600177,
+            "interval_time_sensitivity": 0.8201563857515204,
+            "interval_spatiotemporal_sensitivity": 0.7837599293909974,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.8014121800529568
+          }
+        },
+        {
+          "arm": "STREAM3D_TABLE_FAST",
+          "fps": 45.5,
+          "time": {
+            "TP": 461,
+            "FP": 162,
+            "FN": 89,
+            "precision": 0.7399678972712681,
+            "recall": 0.8381818181818181,
+            "F1": 0.7860187553282183,
+            "predictions": 662,
+            "scored_events": 550,
+            "ignored_predictions": 39,
+            "excluded_special_events": 21,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 50,
+            "excluded_unresolved_type_events": 6,
+            "ignored_unresolved_type_predictions": 4
+          },
+          "spatiotemporal": {
+            "TP": 435,
+            "FP": 182,
+            "FN": 103,
+            "precision": 0.7050243111831442,
+            "recall": 0.8085501858736059,
+            "F1": 0.7532467532467533,
+            "predictions": 662,
+            "scored_events": 538,
+            "ignored_predictions": 45,
+            "excluded_special_events": 21,
+            "excluded_without_coordinate_events": 12,
+            "unknown_ranges": 50,
+            "excluded_unresolved_type_events": 6,
+            "ignored_unresolved_type_predictions": 4
+          },
+          "source_macro_time_F1": 0.782821814719978,
+          "sensitivity_F1": {
+            "representative_time": 0.7860187553282183,
+            "representative_spatiotemporal": 0.7532467532467533,
+            "interval_time_sensitivity": 0.8013640238704177,
+            "interval_spatiotemporal_sensitivity": 0.7608318890814558,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.7781629116117851
+          }
+        }
+      ],
+      "camera_issue41_diagnostic": [
+        {
+          "arm": "OFFICIAL",
+          "fps": 65.2,
+          "time": {
+            "TP": 152,
+            "FP": 77,
+            "FN": 111,
+            "precision": 0.6637554585152838,
+            "recall": 0.5779467680608364,
+            "F1": 0.6178861788617886,
+            "predictions": 252,
+            "scored_events": 263,
+            "ignored_predictions": 23,
+            "excluded_special_events": 4,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 30,
+            "excluded_unresolved_type_events": 15,
+            "ignored_unresolved_type_predictions": 10
+          },
+          "spatiotemporal": {
+            "TP": 137,
+            "FP": 87,
+            "FN": 113,
+            "precision": 0.6116071428571429,
+            "recall": 0.548,
+            "F1": 0.5780590717299579,
+            "predictions": 252,
+            "scored_events": 250,
+            "ignored_predictions": 28,
+            "excluded_special_events": 4,
+            "excluded_without_coordinate_events": 13,
+            "unknown_ranges": 30,
+            "excluded_unresolved_type_events": 15,
+            "ignored_unresolved_type_predictions": 9
+          },
+          "source_macro_time_F1": 0.5915988037727168,
+          "sensitivity_F1": {
+            "representative_time": 0.6178861788617886,
+            "representative_spatiotemporal": 0.5780590717299579,
+            "interval_time_sensitivity": 0.6300813008130082,
+            "interval_spatiotemporal_sensitivity": 0.5780590717299579,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.6033755274261603
+          }
+        },
+        {
+          "arm": "STATIC_FINAL",
+          "fps": 47.5,
+          "time": {
+            "TP": 188,
+            "FP": 28,
+            "FN": 75,
+            "precision": 0.8703703703703703,
+            "recall": 0.714828897338403,
+            "F1": 0.7849686847599165,
+            "predictions": 237,
+            "scored_events": 263,
+            "ignored_predictions": 21,
+            "excluded_special_events": 4,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 30,
+            "excluded_unresolved_type_events": 15,
+            "ignored_unresolved_type_predictions": 10
+          },
+          "spatiotemporal": {
+            "TP": 169,
+            "FP": 40,
+            "FN": 81,
+            "precision": 0.8086124401913876,
+            "recall": 0.676,
+            "F1": 0.7363834422657952,
+            "predictions": 237,
+            "scored_events": 250,
+            "ignored_predictions": 28,
+            "excluded_special_events": 4,
+            "excluded_without_coordinate_events": 13,
+            "unknown_ranges": 30,
+            "excluded_unresolved_type_events": 15,
+            "ignored_unresolved_type_predictions": 9
+          },
+          "source_macro_time_F1": 0.7554414084644925,
+          "sensitivity_F1": {
+            "representative_time": 0.7849686847599165,
+            "representative_spatiotemporal": 0.7363834422657952,
+            "interval_time_sensitivity": 0.7933194154488518,
+            "interval_spatiotemporal_sensitivity": 0.7363834422657952,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.7712418300653595
+          }
+        },
+        {
+          "arm": "MASKED_TABLE",
+          "fps": 53.7,
+          "time": {
+            "TP": 209,
+            "FP": 46,
+            "FN": 54,
+            "precision": 0.8196078431372549,
+            "recall": 0.7946768060836502,
+            "F1": 0.806949806949807,
+            "predictions": 272,
+            "scored_events": 263,
+            "ignored_predictions": 17,
+            "excluded_special_events": 4,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 30,
+            "excluded_unresolved_type_events": 15,
+            "ignored_unresolved_type_predictions": 9
+          },
+          "spatiotemporal": {
+            "TP": 183,
+            "FP": 64,
+            "FN": 67,
+            "precision": 0.7408906882591093,
+            "recall": 0.732,
+            "F1": 0.7364185110663984,
+            "predictions": 272,
+            "scored_events": 250,
+            "ignored_predictions": 25,
+            "excluded_special_events": 4,
+            "excluded_without_coordinate_events": 13,
+            "unknown_ranges": 30,
+            "excluded_unresolved_type_events": 15,
+            "ignored_unresolved_type_predictions": 8
+          },
+          "source_macro_time_F1": 0.7830635730252098,
+          "sensitivity_F1": {
+            "representative_time": 0.806949806949807,
+            "representative_spatiotemporal": 0.7364185110663984,
+            "interval_time_sensitivity": 0.8108108108108109,
+            "interval_spatiotemporal_sensitivity": 0.7404426559356136,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.7847082494969819
+          }
+        },
+        {
+          "arm": "CHANNEL_TABLE",
+          "fps": 55.2,
+          "time": {
+            "TP": 212,
+            "FP": 56,
+            "FN": 51,
+            "precision": 0.7910447761194029,
+            "recall": 0.8060836501901141,
+            "F1": 0.7984934086629002,
+            "predictions": 287,
+            "scored_events": 263,
+            "ignored_predictions": 19,
+            "excluded_special_events": 4,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 30,
+            "excluded_unresolved_type_events": 15,
+            "ignored_unresolved_type_predictions": 11
+          },
+          "spatiotemporal": {
+            "TP": 191,
+            "FP": 71,
+            "FN": 59,
+            "precision": 0.7290076335877863,
+            "recall": 0.764,
+            "F1": 0.74609375,
+            "predictions": 287,
+            "scored_events": 250,
+            "ignored_predictions": 25,
+            "excluded_special_events": 4,
+            "excluded_without_coordinate_events": 13,
+            "unknown_ranges": 30,
+            "excluded_unresolved_type_events": 15,
+            "ignored_unresolved_type_predictions": 9
+          },
+          "source_macro_time_F1": 0.7736911360729855,
+          "sensitivity_F1": {
+            "representative_time": 0.7984934086629002,
+            "representative_spatiotemporal": 0.74609375,
+            "interval_time_sensitivity": 0.8060263653483992,
+            "interval_spatiotemporal_sensitivity": 0.75,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.7890625
+          }
+        },
+        {
+          "arm": "STREAM3D_TABLE_FAST",
+          "fps": 45.5,
+          "time": {
+            "TP": 209,
+            "FP": 49,
+            "FN": 54,
+            "precision": 0.810077519379845,
+            "recall": 0.7946768060836502,
+            "F1": 0.8023032629558541,
+            "predictions": 274,
+            "scored_events": 263,
+            "ignored_predictions": 16,
+            "excluded_special_events": 4,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 30,
+            "excluded_unresolved_type_events": 15,
+            "ignored_unresolved_type_predictions": 9
+          },
+          "spatiotemporal": {
+            "TP": 185,
+            "FP": 66,
+            "FN": 65,
+            "precision": 0.7370517928286853,
+            "recall": 0.74,
+            "F1": 0.7385229540918163,
+            "predictions": 274,
+            "scored_events": 250,
+            "ignored_predictions": 23,
+            "excluded_special_events": 4,
+            "excluded_without_coordinate_events": 13,
+            "unknown_ranges": 30,
+            "excluded_unresolved_type_events": 15,
+            "ignored_unresolved_type_predictions": 8
+          },
+          "source_macro_time_F1": 0.7812803921155624,
+          "sensitivity_F1": {
+            "representative_time": 0.8023032629558541,
+            "representative_spatiotemporal": 0.7385229540918163,
+            "interval_time_sensitivity": 0.8061420345489443,
+            "interval_spatiotemporal_sensitivity": 0.7425149700598802,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.7864271457085829
+          }
+        }
+      ]
+    },
+    "as_recorded": {
+      "all130_diagnostic": [
+        {
+          "arm": "OFFICIAL",
+          "fps": 65.2,
+          "time": {
+            "TP": 481,
+            "FP": 276,
+            "FN": 353,
+            "precision": 0.6354029062087186,
+            "recall": 0.5767386091127098,
+            "F1": 0.6046511627906976,
+            "predictions": 800,
+            "scored_events": 834,
+            "ignored_predictions": 43,
+            "excluded_special_events": 25,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 80,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "spatiotemporal": {
+            "TP": 452,
+            "FP": 295,
+            "FN": 357,
+            "precision": 0.6050870147255689,
+            "recall": 0.5587144622991347,
+            "F1": 0.5809768637532133,
+            "predictions": 800,
+            "scored_events": 809,
+            "ignored_predictions": 53,
+            "excluded_special_events": 25,
+            "excluded_without_coordinate_events": 25,
+            "unknown_ranges": 80,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "source_macro_time_F1": 0.5713388665105655,
+          "sensitivity_F1": {
+            "representative_time": 0.6046511627906976,
+            "representative_spatiotemporal": 0.5809768637532133,
+            "interval_time_sensitivity": 0.6222501571338781,
+            "interval_spatiotemporal_sensitivity": 0.5874035989717223,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.6041131105398457
+          }
+        },
+        {
+          "arm": "STATIC_FINAL",
+          "fps": 47.5,
+          "time": {
+            "TP": 605,
+            "FP": 124,
+            "FN": 229,
+            "precision": 0.8299039780521262,
+            "recall": 0.7254196642685852,
+            "F1": 0.7741522712731925,
+            "predictions": 763,
+            "scored_events": 834,
+            "ignored_predictions": 34,
+            "excluded_special_events": 25,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 80,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "spatiotemporal": {
+            "TP": 567,
+            "FP": 148,
+            "FN": 242,
+            "precision": 0.793006993006993,
+            "recall": 0.7008652657601978,
+            "F1": 0.7440944881889764,
+            "predictions": 763,
+            "scored_events": 809,
+            "ignored_predictions": 48,
+            "excluded_special_events": 25,
+            "excluded_without_coordinate_events": 25,
+            "unknown_ranges": 80,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "source_macro_time_F1": 0.7529330967129968,
+          "sensitivity_F1": {
+            "representative_time": 0.7741522712731925,
+            "representative_spatiotemporal": 0.7440944881889764,
+            "interval_time_sensitivity": 0.7856685860524633,
+            "interval_spatiotemporal_sensitivity": 0.7493438320209974,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.7690288713910761
+          }
+        },
+        {
+          "arm": "MASKED_TABLE",
+          "fps": 53.7,
+          "time": {
+            "TP": 662,
+            "FP": 168,
+            "FN": 172,
+            "precision": 0.7975903614457831,
+            "recall": 0.7937649880095923,
+            "F1": 0.7956730769230769,
+            "predictions": 872,
+            "scored_events": 834,
+            "ignored_predictions": 42,
+            "excluded_special_events": 25,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 80,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "spatiotemporal": {
+            "TP": 611,
+            "FP": 204,
+            "FN": 198,
+            "precision": 0.7496932515337423,
+            "recall": 0.7552533992583437,
+            "F1": 0.7524630541871922,
+            "predictions": 872,
+            "scored_events": 809,
+            "ignored_predictions": 57,
+            "excluded_special_events": 25,
+            "excluded_without_coordinate_events": 25,
+            "unknown_ranges": 80,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "source_macro_time_F1": 0.7863486114803949,
+          "sensitivity_F1": {
+            "representative_time": 0.7956730769230769,
+            "representative_spatiotemporal": 0.7524630541871922,
+            "interval_time_sensitivity": 0.8112980769230769,
+            "interval_spatiotemporal_sensitivity": 0.7603203943314849,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.7874306839186691
+          }
+        },
+        {
+          "arm": "CHANNEL_TABLE",
+          "fps": 55.2,
+          "time": {
+            "TP": 688,
+            "FP": 196,
+            "FN": 146,
+            "precision": 0.7782805429864253,
+            "recall": 0.8249400479616307,
+            "F1": 0.8009313154831199,
+            "predictions": 930,
+            "scored_events": 834,
+            "ignored_predictions": 46,
+            "excluded_special_events": 25,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 80,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "spatiotemporal": {
+            "TP": 643,
+            "FP": 227,
+            "FN": 166,
+            "precision": 0.7390804597701149,
+            "recall": 0.7948084054388134,
+            "F1": 0.7659321024419298,
+            "predictions": 930,
+            "scored_events": 809,
+            "ignored_predictions": 60,
+            "excluded_special_events": 25,
+            "excluded_without_coordinate_events": 25,
+            "unknown_ranges": 80,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "source_macro_time_F1": 0.796409052579274,
+          "sensitivity_F1": {
+            "representative_time": 0.8009313154831199,
+            "representative_spatiotemporal": 0.7659321024419298,
+            "interval_time_sensitivity": 0.8160651920838184,
+            "interval_spatiotemporal_sensitivity": 0.7730792138177487,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.7969029184038118
+          }
+        },
+        {
+          "arm": "STREAM3D_TABLE_FAST",
+          "fps": 45.5,
+          "time": {
+            "TP": 683,
+            "FP": 211,
+            "FN": 151,
+            "precision": 0.7639821029082774,
+            "recall": 0.8189448441247003,
+            "F1": 0.7905092592592593,
+            "predictions": 936,
+            "scored_events": 834,
+            "ignored_predictions": 42,
+            "excluded_special_events": 25,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 80,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "spatiotemporal": {
+            "TP": 632,
+            "FP": 248,
+            "FN": 177,
+            "precision": 0.7181818181818181,
+            "recall": 0.7812113720642769,
+            "F1": 0.7483718176435761,
+            "predictions": 936,
+            "scored_events": 809,
+            "ignored_predictions": 56,
+            "excluded_special_events": 25,
+            "excluded_without_coordinate_events": 25,
+            "unknown_ranges": 80,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "source_macro_time_F1": 0.7779962056086069,
+          "sensitivity_F1": {
+            "representative_time": 0.7905092592592593,
+            "representative_spatiotemporal": 0.7483718176435761,
+            "interval_time_sensitivity": 0.8020833333333334,
+            "interval_spatiotemporal_sensitivity": 0.754739336492891,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.7796208530805687
+          }
+        }
+      ],
+      "camera_screened89_provisional": [
+        {
+          "arm": "OFFICIAL",
+          "fps": 65.2,
+          "time": {
+            "TP": 319,
+            "FP": 199,
+            "FN": 237,
+            "precision": 0.6158301158301158,
+            "recall": 0.5737410071942446,
+            "F1": 0.5940409683426443,
+            "predictions": 548,
+            "scored_events": 556,
+            "ignored_predictions": 30,
+            "excluded_special_events": 21,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 50,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "spatiotemporal": {
+            "TP": 306,
+            "FP": 208,
+            "FN": 238,
+            "precision": 0.5953307392996109,
+            "recall": 0.5625,
+            "F1": 0.5784499054820416,
+            "predictions": 548,
+            "scored_events": 544,
+            "ignored_predictions": 34,
+            "excluded_special_events": 21,
+            "excluded_without_coordinate_events": 12,
+            "unknown_ranges": 50,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "source_macro_time_F1": 0.5629602538572644,
+          "sensitivity_F1": {
+            "representative_time": 0.5940409683426443,
+            "representative_spatiotemporal": 0.5784499054820416,
+            "interval_time_sensitivity": 0.6145251396648045,
+            "interval_spatiotemporal_sensitivity": 0.5879017013232514,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.6011342155009451
+          }
+        },
+        {
+          "arm": "STATIC_FINAL",
+          "fps": 47.5,
+          "time": {
+            "TP": 407,
+            "FP": 96,
+            "FN": 149,
+            "precision": 0.8091451292246521,
+            "recall": 0.7320143884892086,
+            "F1": 0.7686496694995278,
+            "predictions": 526,
+            "scored_events": 556,
+            "ignored_predictions": 23,
+            "excluded_special_events": 21,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 50,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "spatiotemporal": {
+            "TP": 389,
+            "FP": 108,
+            "FN": 155,
+            "precision": 0.7826961770623743,
+            "recall": 0.7150735294117647,
+            "F1": 0.7473583093179635,
+            "predictions": 526,
+            "scored_events": 544,
+            "ignored_predictions": 29,
+            "excluded_special_events": 21,
+            "excluded_without_coordinate_events": 12,
+            "unknown_ranges": 50,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "source_macro_time_F1": 0.751350339078396,
+          "sensitivity_F1": {
+            "representative_time": 0.7686496694995278,
+            "representative_spatiotemporal": 0.7473583093179635,
+            "interval_time_sensitivity": 0.7818696883852692,
+            "interval_spatiotemporal_sensitivity": 0.7550432276657061,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.7684918347742555
+          }
+        },
+        {
+          "arm": "MASKED_TABLE",
+          "fps": 53.7,
+          "time": {
+            "TP": 444,
+            "FP": 122,
+            "FN": 112,
+            "precision": 0.784452296819788,
+            "recall": 0.7985611510791367,
+            "F1": 0.7914438502673797,
+            "predictions": 600,
+            "scored_events": 556,
+            "ignored_predictions": 34,
+            "excluded_special_events": 21,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 50,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "spatiotemporal": {
+            "TP": 420,
+            "FP": 140,
+            "FN": 124,
+            "precision": 0.75,
+            "recall": 0.7720588235294118,
+            "F1": 0.7608695652173914,
+            "predictions": 600,
+            "scored_events": 544,
+            "ignored_predictions": 40,
+            "excluded_special_events": 21,
+            "excluded_without_coordinate_events": 12,
+            "unknown_ranges": 50,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "source_macro_time_F1": 0.7871453322551261,
+          "sensitivity_F1": {
+            "representative_time": 0.7914438502673797,
+            "representative_spatiotemporal": 0.7608695652173914,
+            "interval_time_sensitivity": 0.8128342245989305,
+            "interval_spatiotemporal_sensitivity": 0.7706255666364461,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.7905711695376246
+          }
+        },
+        {
+          "arm": "CHANNEL_TABLE",
+          "fps": 55.2,
+          "time": {
+            "TP": 465,
+            "FP": 140,
+            "FN": 91,
+            "precision": 0.768595041322314,
+            "recall": 0.8363309352517986,
+            "F1": 0.8010335917312662,
+            "predictions": 643,
+            "scored_events": 556,
+            "ignored_predictions": 38,
+            "excluded_special_events": 21,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 50,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "spatiotemporal": {
+            "TP": 443,
+            "FP": 156,
+            "FN": 101,
+            "precision": 0.7395659432387313,
+            "recall": 0.8143382352941176,
+            "F1": 0.7751531058617673,
+            "predictions": 643,
+            "scored_events": 544,
+            "ignored_predictions": 44,
+            "excluded_special_events": 21,
+            "excluded_without_coordinate_events": 12,
+            "unknown_ranges": 50,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "source_macro_time_F1": 0.8045803857283381,
+          "sensitivity_F1": {
+            "representative_time": 0.8010335917312662,
+            "representative_spatiotemporal": 0.7751531058617673,
+            "interval_time_sensitivity": 0.8199827734711456,
+            "interval_spatiotemporal_sensitivity": 0.7839020122484689,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.8013998250218722
+          }
+        },
+        {
+          "arm": "STREAM3D_TABLE_FAST",
+          "fps": 45.5,
+          "time": {
+            "TP": 465,
+            "FP": 162,
+            "FN": 91,
+            "precision": 0.7416267942583732,
+            "recall": 0.8363309352517986,
+            "F1": 0.7861369399830939,
+            "predictions": 662,
+            "scored_events": 556,
+            "ignored_predictions": 35,
+            "excluded_special_events": 21,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 50,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "spatiotemporal": {
+            "TP": 439,
+            "FP": 182,
+            "FN": 105,
+            "precision": 0.7069243156199678,
+            "recall": 0.8069852941176471,
+            "F1": 0.7536480686695279,
+            "predictions": 662,
+            "scored_events": 544,
+            "ignored_predictions": 41,
+            "excluded_special_events": 21,
+            "excluded_without_coordinate_events": 12,
+            "unknown_ranges": 50,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "source_macro_time_F1": 0.782682216573027,
+          "sensitivity_F1": {
+            "representative_time": 0.7861369399830939,
+            "representative_spatiotemporal": 0.7536480686695279,
+            "interval_time_sensitivity": 0.801352493660186,
+            "interval_spatiotemporal_sensitivity": 0.761168384879725,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.7783505154639175
+          }
+        }
+      ],
+      "camera_issue41_diagnostic": [
+        {
+          "arm": "OFFICIAL",
+          "fps": 65.2,
+          "time": {
+            "TP": 162,
+            "FP": 77,
+            "FN": 116,
+            "precision": 0.6778242677824268,
+            "recall": 0.5827338129496403,
+            "F1": 0.6266924564796905,
+            "predictions": 252,
+            "scored_events": 278,
+            "ignored_predictions": 13,
+            "excluded_special_events": 4,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 30,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "spatiotemporal": {
+            "TP": 146,
+            "FP": 87,
+            "FN": 119,
+            "precision": 0.6266094420600858,
+            "recall": 0.5509433962264151,
+            "F1": 0.5863453815261044,
+            "predictions": 252,
+            "scored_events": 265,
+            "ignored_predictions": 19,
+            "excluded_special_events": 4,
+            "excluded_without_coordinate_events": 13,
+            "unknown_ranges": 30,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "source_macro_time_F1": 0.5984067989046951,
+          "sensitivity_F1": {
+            "representative_time": 0.6266924564796905,
+            "representative_spatiotemporal": 0.5863453815261044,
+            "interval_time_sensitivity": 0.6382978723404256,
+            "interval_spatiotemporal_sensitivity": 0.5863453815261044,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.6104417670682731
+          }
+        },
+        {
+          "arm": "STATIC_FINAL",
+          "fps": 47.5,
+          "time": {
+            "TP": 198,
+            "FP": 28,
+            "FN": 80,
+            "precision": 0.8761061946902655,
+            "recall": 0.7122302158273381,
+            "F1": 0.7857142857142857,
+            "predictions": 237,
+            "scored_events": 278,
+            "ignored_predictions": 11,
+            "excluded_special_events": 4,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 30,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "spatiotemporal": {
+            "TP": 178,
+            "FP": 40,
+            "FN": 87,
+            "precision": 0.8165137614678899,
+            "recall": 0.6716981132075471,
+            "F1": 0.7370600414078675,
+            "predictions": 237,
+            "scored_events": 265,
+            "ignored_predictions": 19,
+            "excluded_special_events": 4,
+            "excluded_without_coordinate_events": 13,
+            "unknown_ranges": 30,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "source_macro_time_F1": 0.7578551316559445,
+          "sensitivity_F1": {
+            "representative_time": 0.7857142857142857,
+            "representative_spatiotemporal": 0.7370600414078675,
+            "interval_time_sensitivity": 0.7936507936507936,
+            "interval_spatiotemporal_sensitivity": 0.7370600414078675,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.7701863354037267
+          }
+        },
+        {
+          "arm": "MASKED_TABLE",
+          "fps": 53.7,
+          "time": {
+            "TP": 218,
+            "FP": 46,
+            "FN": 60,
+            "precision": 0.8257575757575758,
+            "recall": 0.7841726618705036,
+            "F1": 0.8044280442804428,
+            "predictions": 272,
+            "scored_events": 278,
+            "ignored_predictions": 8,
+            "excluded_special_events": 4,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 30,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "spatiotemporal": {
+            "TP": 191,
+            "FP": 64,
+            "FN": 74,
+            "precision": 0.7490196078431373,
+            "recall": 0.720754716981132,
+            "F1": 0.7346153846153847,
+            "predictions": 272,
+            "scored_events": 265,
+            "ignored_predictions": 17,
+            "excluded_special_events": 4,
+            "excluded_without_coordinate_events": 13,
+            "unknown_ranges": 30,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "source_macro_time_F1": 0.7850370849530638,
+          "sensitivity_F1": {
+            "representative_time": 0.8044280442804428,
+            "representative_spatiotemporal": 0.7346153846153847,
+            "interval_time_sensitivity": 0.8081180811808119,
+            "interval_spatiotemporal_sensitivity": 0.7384615384615385,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.7807692307692308
+          }
+        },
+        {
+          "arm": "CHANNEL_TABLE",
+          "fps": 55.2,
+          "time": {
+            "TP": 223,
+            "FP": 56,
+            "FN": 55,
+            "precision": 0.7992831541218638,
+            "recall": 0.802158273381295,
+            "F1": 0.800718132854578,
+            "predictions": 287,
+            "scored_events": 278,
+            "ignored_predictions": 8,
+            "excluded_special_events": 4,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 30,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "spatiotemporal": {
+            "TP": 200,
+            "FP": 71,
+            "FN": 65,
+            "precision": 0.7380073800738007,
+            "recall": 0.7547169811320755,
+            "F1": 0.746268656716418,
+            "predictions": 287,
+            "scored_events": 265,
+            "ignored_predictions": 16,
+            "excluded_special_events": 4,
+            "excluded_without_coordinate_events": 13,
+            "unknown_ranges": 30,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "source_macro_time_F1": 0.7817061804638676,
+          "sensitivity_F1": {
+            "representative_time": 0.800718132854578,
+            "representative_spatiotemporal": 0.746268656716418,
+            "interval_time_sensitivity": 0.8078994614003591,
+            "interval_spatiotemporal_sensitivity": 0.75,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.7873134328358209
+          }
+        },
+        {
+          "arm": "STREAM3D_TABLE_FAST",
+          "fps": 45.5,
+          "time": {
+            "TP": 218,
+            "FP": 49,
+            "FN": 60,
+            "precision": 0.8164794007490637,
+            "recall": 0.7841726618705036,
+            "F1": 0.8,
+            "predictions": 274,
+            "scored_events": 278,
+            "ignored_predictions": 7,
+            "excluded_special_events": 4,
+            "excluded_without_coordinate_events": 0,
+            "unknown_ranges": 30,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "spatiotemporal": {
+            "TP": 193,
+            "FP": 66,
+            "FN": 72,
+            "precision": 0.7451737451737451,
+            "recall": 0.7283018867924528,
+            "F1": 0.7366412213740458,
+            "predictions": 274,
+            "scored_events": 265,
+            "ignored_predictions": 15,
+            "excluded_special_events": 4,
+            "excluded_without_coordinate_events": 13,
+            "unknown_ranges": 30,
+            "excluded_unresolved_type_events": 0,
+            "ignored_unresolved_type_predictions": 0
+          },
+          "source_macro_time_F1": 0.7831209095563496,
+          "sensitivity_F1": {
+            "representative_time": 0.8,
+            "representative_spatiotemporal": 0.7366412213740458,
+            "interval_time_sensitivity": 0.8036697247706422,
+            "interval_spatiotemporal_sensitivity": 0.7404580152671756,
+            "interval_and_bounds_spatiotemporal_sensitivity": 0.7824427480916031
+          }
+        }
+      ]
+    }
+  },
+  "paired_time_counts": {
+    "STATIC_FINAL_vs_OFFICIAL": {
+      "retained_GT": 433,
+      "improved_groups": 47,
+      "degraded_groups": 1,
+      "gained_GT": 157,
+      "lost_GT": 34
+    },
+    "MASKED_TABLE_vs_OFFICIAL": {
+      "retained_GT": 402,
+      "improved_groups": 45,
+      "degraded_groups": 2,
+      "gained_GT": 247,
+      "lost_GT": 65
+    },
+    "CHANNEL_TABLE_vs_OFFICIAL": {
+      "retained_GT": 412,
+      "improved_groups": 45,
+      "degraded_groups": 3,
+      "gained_GT": 261,
+      "lost_GT": 55
+    },
+    "STREAM3D_TABLE_FAST_vs_OFFICIAL": {
+      "retained_GT": 413,
+      "improved_groups": 43,
+      "degraded_groups": 3,
+      "gained_GT": 257,
+      "lost_GT": 54
+    },
+    "OFFICIAL_vs_MASKED_TABLE": {
+      "retained_GT": 402,
+      "improved_groups": 2,
+      "degraded_groups": 45,
+      "gained_GT": 65,
+      "lost_GT": 247
+    },
+    "STATIC_FINAL_vs_MASKED_TABLE": {
+      "retained_GT": 524,
+      "improved_groups": 16,
+      "degraded_groups": 30,
+      "gained_GT": 66,
+      "lost_GT": 125
+    },
+    "CHANNEL_TABLE_vs_MASKED_TABLE": {
+      "retained_GT": 620,
+      "improved_groups": 24,
+      "degraded_groups": 19,
+      "gained_GT": 53,
+      "lost_GT": 29
+    },
+    "STREAM3D_TABLE_FAST_vs_MASKED_TABLE": {
+      "retained_GT": 645,
+      "improved_groups": 16,
+      "degraded_groups": 19,
+      "gained_GT": 25,
+      "lost_GT": 4
+    }
+  },
+  "GT_provenance": {
+    "OFFICIAL": {
+      "original_AI_reference": {
+        "annotated_events": 755,
+        "scorable_events": 730,
+        "TP": 431,
+        "FN": 299,
+        "recall": 0.5904109589041096,
+        "excluded_status_counts": {
+          "excluded_special": 25
+        }
+      },
+      "local_human_addition": {
+        "annotated_events": 104,
+        "scorable_events": 83,
+        "TP": 36,
+        "FN": 47,
+        "recall": 0.43373493975903615,
+        "excluded_status_counts": {
+          "excluded_unresolved_type": 21
+        }
+      }
+    },
+    "STATIC_FINAL": {
+      "original_AI_reference": {
+        "annotated_events": 755,
+        "scorable_events": 730,
+        "TP": 547,
+        "FN": 183,
+        "recall": 0.7493150684931507,
+        "excluded_status_counts": {
+          "excluded_special": 25
+        }
+      },
+      "local_human_addition": {
+        "annotated_events": 104,
+        "scorable_events": 83,
+        "TP": 43,
+        "FN": 40,
+        "recall": 0.5180722891566265,
+        "excluded_status_counts": {
+          "excluded_unresolved_type": 21
+        }
+      }
+    },
+    "MASKED_TABLE": {
+      "original_AI_reference": {
+        "annotated_events": 755,
+        "scorable_events": 730,
+        "TP": 615,
+        "FN": 115,
+        "recall": 0.8424657534246576,
+        "excluded_status_counts": {
+          "excluded_special": 25
+        }
+      },
+      "local_human_addition": {
+        "annotated_events": 104,
+        "scorable_events": 83,
+        "TP": 34,
+        "FN": 49,
+        "recall": 0.40963855421686746,
+        "excluded_status_counts": {
+          "excluded_unresolved_type": 21
+        }
+      }
+    },
+    "CHANNEL_TABLE": {
+      "original_AI_reference": {
+        "annotated_events": 755,
+        "scorable_events": 730,
+        "TP": 633,
+        "FN": 97,
+        "recall": 0.8671232876712329,
+        "excluded_status_counts": {
+          "excluded_special": 25
+        }
+      },
+      "local_human_addition": {
+        "annotated_events": 104,
+        "scorable_events": 83,
+        "TP": 40,
+        "FN": 43,
+        "recall": 0.4819277108433735,
+        "excluded_status_counts": {
+          "excluded_unresolved_type": 21
+        }
+      }
+    },
+    "STREAM3D_TABLE_FAST": {
+      "original_AI_reference": {
+        "annotated_events": 755,
+        "scorable_events": 730,
+        "TP": 633,
+        "FN": 97,
+        "recall": 0.8671232876712329,
+        "excluded_status_counts": {
+          "excluded_special": 25
+        }
+      },
+      "local_human_addition": {
+        "annotated_events": 104,
+        "scorable_events": 83,
+        "TP": 37,
+        "FN": 46,
+        "recall": 0.4457831325301205,
+        "excluded_status_counts": {
+          "excluded_unresolved_type": 21
+        }
+      }
+    }
+  },
+  "coordinate_condition_counts": {
+    "CHANNEL_TABLE": {
+      "time_hits_without_GT_XY": 15,
+      "time_hits_lost_under_XY_condition": 28
+    },
+    "MASKED_TABLE": {
+      "time_hits_without_GT_XY": 16,
+      "time_hits_lost_under_XY_condition": 34
+    },
+    "OFFICIAL": {
+      "time_hits_without_GT_XY": 12,
+      "time_hits_lost_under_XY_condition": 15
+    },
+    "STATIC_FINAL": {
+      "time_hits_without_GT_XY": 15,
+      "time_hits_lost_under_XY_condition": 21
+    },
+    "STREAM3D_TABLE_FAST": {
+      "time_hits_without_GT_XY": 15,
+      "time_hits_lost_under_XY_condition": 35
+    }
+  },
+  "evidence": {
+    "collection": "runs/server_external130_runtime_v001/collection_20261109T103234392234Z",
+    "verified_members": 1308,
+    "archive_sha256": "adc3f6d7f5fd5426fffba8b2c6a5f2b5b0bc0314e51e056e9584e36b7186d43f",
+    "gpu_idle_at_collection": true
+  }
+}

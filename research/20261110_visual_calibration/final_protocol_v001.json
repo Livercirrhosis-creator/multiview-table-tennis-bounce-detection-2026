@@ -1,0 +1,94 @@
+{
+  "schema": "visual_calibration_final154.v1",
+  "date_shanghai": "2026-11-10",
+  "main_retained": "CHANNEL_TABLE_FINAL154_V001",
+  "research_basis": "Predeclared CALIBRATED_SCALE_AWARE passed the development121 source-held-out continuation condition; no diagnostic arm reselection",
+  "scope": {
+    "visual_fit_video_ids": "original121 plus former33, authorized final154",
+    "calibration_fit_video_ids": "original121 only, using previous ten source-held-out raw visual predictions",
+    "external130_used_in_fit": false,
+    "public15_used_in_fit": false,
+    "former33_evaluation_role": "training-in, not an independent test",
+    "all_real_fitting_on_server": true
+  },
+  "assets": {
+    "augmented_candidates": 20641,
+    "prefix121_candidates": 17559,
+    "additional33_candidates": 3082,
+    "prefix121_stem_sha256": "707a850f3524167fd89e6e93ae6e282d635b2f57907ab114feae69538c4c0333",
+    "table_event_bags": 729,
+    "racket_event_bags": 642,
+    "legal_backgrounds": 16275,
+    "visual_fits": 1,
+    "calibration_fits": 1,
+    "prior_real_inner_training_runs": 30
+  },
+  "visual_training": {
+    "recipe": "Unchanged adapted_visual_v001 ImageNet initialization, frozen stem and all BN, trainable tail/head, original MIL bags/backgrounds",
+    "epochs": 16,
+    "seed": 20261109,
+    "checkpoint": "fixed final epoch",
+    "rgb_shape": [
+      3,
+      2,
+      3,
+      96,
+      96
+    ],
+    "crop": "unchanged 80/192 physical scale at720p, minimum32, constant candidate center, zero pad and PIL bilinear",
+    "time_slots_seconds": [
+      -0.08,
+      0,
+      0.08
+    ],
+    "warm_start_from_development_folds": false
+  },
+  "calibration": {
+    "parameter": "inverse_temperature_a",
+    "bounds": [
+      0,
+      1
+    ],
+    "input": "Old121 outer-OOF raw visual probabilities; source model did not train the predicted source",
+    "objective_and_optimizer": "Exactly protocol_v001 weak-event-bag/background objective and bounded numerical minimization, compare endpoints on the same fit objective",
+    "scalar_selection_by_evaluation_f1": false,
+    "distribution_shift": "121 source-OOF models fit9sources; final visual fits154. Confidence-scale transfer is unproven until external/public confirmation."
+  },
+  "runtime": {
+    "entrypoint": "participant.visual_calibration_v001.solution:Solution",
+    "base_entrypoint": "participant.table_guard_v001.channel_solution:Solution",
+    "fusion": "CALIBRATED_SCALE_AWARE only, same calibration.py, original strict-boundary shortlist",
+    "unchanged": "154 dense/window/gap/table weights, event candidates, XY, native time and80ms final separation",
+    "visual_device": "cuda:0",
+    "forward_candidate_batch_size": 32,
+    "reuse_existing_decoded_rgb": true,
+    "frame_retention_limit_bytes": 1610612736,
+    "over_limit": "Whole video keeps original CHANNEL154; report fallback. No second decode and no video-duration rule.",
+    "default_engineering_and_basketball_changes": false
+  },
+  "evaluation": {
+    "freeze_new_weights_and_calibration_before_evaluation": true,
+    "arms": [
+      "BASE154",
+      "CALIBRATED154"
+    ],
+    "scopes": [
+      "external130",
+      "public15"
+    ],
+    "runs": 4,
+    "primary_external": "Existing fixed SAFE time-plus-coordinate F1, mixed-reference label limits unchanged",
+    "primary_public": "Existing official-format public local total score including inference speed",
+    "supplementary": "SAFE temporal F1, fixed32 subset, per-source changes, output count and class/stage cost; not alternative selection gates",
+    "adopt": "Both predetermined primary metrics strictly improve over the same-batch BASE154 and complete inference FPS at least55 on both scopes; check complete outputs and material regressions",
+    "otherwise": "Keep CHANNEL_TABLE_FINAL154_V001. Do not sweep scalar, thresholds, epochs or choose a diagnostic arm. Continue separately authorized ROI mechanism preparation.",
+    "timing_claim": "Cached research replay is not complete-video FPS; one run per scope/arm does not establish a stable speed ranking."
+  },
+  "execution": {
+    "server_poll_minutes": 5,
+    "new_instance_start": "user-managed after local preparation",
+    "training_checkpoints_and_small_evidence_return": true,
+    "stem_cache_download": false,
+    "captain_deploy_or_competition_submission": false
+  }
+}

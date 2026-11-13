@@ -1,0 +1,53 @@
+{
+  "candidate": "VISUAL_CALIBRATED_SCALE_AWARE_FINAL154_V001",
+  "retained": true,
+  "fallback": "CHANNEL_TABLE_FINAL154_V001",
+  "entrypoint": "participant.visual_calibration_v001.solution:Solution",
+  "public_total": [
+    87.67676767676768,
+    88.59417344173443
+  ],
+  "external_safe_time_plus_xy_f1": [
+    0.7853211009174312,
+    0.7901077996195307
+  ],
+  "speed": {
+    "official_inference_fps": {
+      "BASE154": {
+        "external130": 67.6,
+        "public15": 66.3
+      },
+      "CALIBRATED154": {
+        "external130": 61.0,
+        "public15": 61.4
+      }
+    },
+    "target": 55,
+    "independent_repeats": 1,
+    "scope": "Complete official inference timer; one run does not prove a stable speed ranking"
+  },
+  "conditions": {
+    "external_safe_spatiotemporal_improves": true,
+    "public_local_total_improves": true,
+    "candidate_external_fps_at_least55": true,
+    "candidate_public_fps_at_least55": true
+  },
+  "deployment_seal": {
+    "schema": "visual_calibration_deployment_seal.v1",
+    "recipe_id": "VISUAL_CALIBRATED_SCALE_AWARE_FINAL154_V001",
+    "model_sha256": "2556334e430f0487f1b95ae8534b2e3e543fcfc0da741b1f8f342d10619e653b",
+    "calibration_sha256": "b0bbfecd2b71b73cf30d436779542eba3ac726cbef7fcb85202ad9156ea49fc2",
+    "a": 0.1785668588891146,
+    "training_videos": 154,
+    "calibration_videos": 121,
+    "fit_receipt_sha256": "844f49a4d473bed051560188feeca703f4f0273ffddcf8427aa7cf654aae5564",
+    "final_protocol_sha256": "b4c3500ed90b3e6a243c63ff591a26d9eb8d31cb27f1087f29419c93f1534052"
+  },
+  "summary_sha256": "8c1750f8600540a79ef3fd5b8bd69b73e7983059ebbf3978138210cb479d3533",
+  "overlay": {
+    "path": "experiments/20261110_visual_calibration/runs/release_v001/visual_calibrated154_overlay_v001.zip",
+    "sha256": "c6572642613feba869df84cce1cc8bbc0b5a3586f4c270aee53ca201bb4a1d52",
+    "bytes": 3608826
+  },
+  "scope": "New fixed candidate retained. Default entry, captain deployment and joint basketball package unchanged. Former33 training-in. No hidden competition score."
+}
